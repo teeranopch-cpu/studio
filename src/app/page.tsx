@@ -28,14 +28,6 @@ export default function Home() {
           <p className="text-xl text-primary-foreground/90 max-w-2xl mb-8 leading-relaxed font-medium">
             The centralized platform for student governance, legislative documents, and civic education at our institution. Built for transparency and accessibility.
           </p>
-          <div className="flex gap-4">
-            <Button size="lg" className="bg-white text-primary hover:bg-white/90 shadow-xl border-none font-bold" asChild>
-              <Link href="/archive">View Constitution <ArrowRight className="ml-2 h-4 w-4" /></Link>
-            </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10 shadow-lg font-bold" asChild>
-              <Link href="/registry">Contact Council</Link>
-            </Button>
-          </div>
         </div>
       </div>
 
