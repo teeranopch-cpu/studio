@@ -32,7 +32,7 @@ const categories = [
     icon: ClipboardList,
     items: [
       { name: "Student Grading Portal (Login Required)", isLink: true },
-      { name: "Academic Calendar 2024-2025", size: "800 KB" },
+      { name: "Academic Calendar", size: "800 KB" },
       { name: "Tutor Program Application", size: "200 KB" }
     ]
   }
