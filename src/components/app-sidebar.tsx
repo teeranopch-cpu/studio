@@ -6,11 +6,8 @@ import {
   FileText, 
   LayoutDashboard, 
   ExternalLink, 
-  Sparkles, 
   Camera, 
-  Gavel,
-  ShieldCheck,
-  Search
+  ShieldCheck
 } from "lucide-react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
@@ -34,7 +31,6 @@ const navigation = [
   { name: "Document Archive", href: "/archive", icon: FileText },
   { name: "Activity Portfolio", href: "/activities", icon: Camera },
   { name: "Resource Portal", href: "/portal", icon: ExternalLink },
-  { name: "AI Simplifier", href: "/simplifier", icon: Sparkles },
 ]
 
 export function AppSidebar() {

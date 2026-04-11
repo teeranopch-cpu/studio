@@ -3,7 +3,7 @@
 import { useState } from "react"
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
+import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Search, FileText, Download, Clock, Filter, Eye, ShieldCheck } from "lucide-react"
 
@@ -147,20 +147,6 @@ export default function ArchivePage() {
           <p className="text-muted-foreground">Try a different keyword or check your filters.</p>
         </div>
       )}
-
-      <div className="mt-16 p-8 rounded-3xl bg-primary text-white overflow-hidden relative">
-        <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-8">
-          <div className="max-w-xl text-center md:text-left">
-            <h2 className="text-3xl font-bold mb-4">Need help understanding these documents?</h2>
-            <p className="text-primary-foreground/90 mb-6 text-lg">Our AI-powered simplifier can translate complex legal jargon into plain language for students and parents.</p>
-            <Button size="lg" className="bg-white text-primary hover:bg-white/90 font-bold px-8" asChild>
-              <a href="/simplifier">Try AI Simplifier</a>
-            </Button>
-          </div>
-          <div className="hidden lg:block h-48 w-48 bg-white/10 rounded-full blur-3xl absolute -right-12 -bottom-12" />
-          <div className="hidden lg:block h-32 w-32 bg-accent/20 rounded-full blur-2xl absolute right-12 top-12" />
-        </div>
-      </div>
     </div>
   )
 }
