@@ -1,3 +1,4 @@
+
 "use client"
 
 import { useState } from "react"
@@ -120,7 +121,7 @@ export default function RegistryPage() {
                   alt="Background" 
                   fill 
                   className="object-cover opacity-80 group-hover:opacity-100 transition-opacity"
-                  data-ai-hint="abstract background"
+                  data-ai-hint="council background"
                 />
               </div>
               <div className="px-6 pb-6 -mt-12 relative z-10">
