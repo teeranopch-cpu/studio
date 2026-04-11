@@ -35,6 +35,12 @@
       "description": "Community Service",
       "imageUrl": "https://picsum.photos/seed/act2/800/600",
       "imageHint": "volunteering"
+    },
+    {
+      "id": "registry-card-bg",
+      "description": "Personnel Card Background",
+      "imageUrl": "https://drive.google.com/uc?export=view&id=1heaAYQiH156D_vOQCq6pPm3Q1WyNj7cK",
+      "imageHint": "council background"
     }
   ]
 }
