@@ -1,0 +1,46 @@
+{
+  "placeholderImages": [
+    {
+      "id": "hero-gov",
+      "description": "Student Council Governance",
+      "imageUrl": "https://picsum.photos/seed/gov1/1200/600",
+      "imageHint": "government leadership"
+    },
+    {
+      "id": "registry-1",
+      "description": "Council Member Profile 1",
+      "imageUrl": "https://picsum.photos/seed/member1/400/400",
+      "imageHint": "portrait student"
+    },
+    {
+      "id": "registry-2",
+      "description": "Council Member Profile 2",
+      "imageUrl": "https://picsum.photos/seed/member2/400/400",
+      "imageHint": "portrait student"
+    },
+    {
+      "id": "education-hub",
+      "description": "Civic Education Class",
+      "imageUrl": "https://picsum.photos/seed/edu/800/500",
+      "imageHint": "learning classroom"
+    },
+    {
+      "id": "activity-1",
+      "description": "Student Campaign",
+      "imageUrl": "https://picsum.photos/seed/act1/800/600",
+      "imageHint": "school event"
+    },
+    {
+      "id": "activity-2",
+      "description": "Community Service",
+      "imageUrl": "https://picsum.photos/seed/act2/800/600",
+      "imageHint": "volunteering"
+    },
+    {
+      "id": "registry-card-bg",
+      "description": "Personnel Card Background",
+      "imageUrl": "https://picsum.photos/seed/regbg/800/200",
+      "imageHint": "blue pattern"
+    }
+  ]
+}

@@ -7,6 +7,8 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Badge } from "@/components/ui/badge"
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Search, Users, Shield, GraduationCap, Phone, Mail } from "lucide-react"
+import Image from "next/image"
+import { PlaceHolderImages } from "@/lib/placeholder-images"
 
 const personnel = [
   {
@@ -68,6 +70,8 @@ const personnel = [
 export default function RegistryPage() {
   const [search, setSearch] = useState("")
   const [activeTab, setActiveTab] = useState("all")
+  
+  const personnelBg = PlaceHolderImages.find(img => img.id === 'registry-card-bg');
 
   const filtered = personnel.filter(p => {
     const matchesSearch = p.name.toLowerCase().includes(search.toLowerCase()) || 
@@ -110,7 +114,15 @@ export default function RegistryPage() {
         {filtered.map((person, idx) => (
           <Card key={idx} className="overflow-hidden border-none shadow-md hover:shadow-xl transition-all group">
             <CardContent className="p-0">
-              <div className="h-24 bg-gradient-to-r from-primary to-accent opacity-80 group-hover:opacity-100 transition-opacity" />
+              <div className="h-24 relative overflow-hidden">
+                <Image 
+                  src={personnelBg?.imageUrl || "https://picsum.photos/seed/regbg/800/200"} 
+                  alt="Background" 
+                  fill 
+                  className="object-cover opacity-80 group-hover:opacity-100 transition-opacity"
+                  data-ai-hint="abstract background"
+                />
+              </div>
               <div className="px-6 pb-6 -mt-12 relative z-10">
                 <Avatar className="h-24 w-24 border-4 border-white shadow-lg mb-4">
                   <AvatarImage src={person.avatar} />
