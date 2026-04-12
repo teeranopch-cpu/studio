@@ -23,7 +23,10 @@ export default function Home() {
         <div className="container mx-auto px-6 relative z-10 text-white max-w-5xl">
           <h1 className="text-5xl font-bold tracking-tight mb-4 drop-shadow-md">
             ขอยินดีต้อนรับ <br />
-            <span className="text-accent">สภาโรงเรียนศีขรภูมิพิสัย</span>
+            <span className="text-accent relative inline-block">
+              สภาโรงเรียนศีขรภูมิพิสัย
+              <span className="absolute -z-10 inset-0 bg-blue-500/30 blur-2xl rounded-full animate-pulse"></span>
+            </span>
           </h1>
           <p className="text-xl text-primary-foreground/90 max-w-2xl mb-8 leading-relaxed font-medium">
             The centralized platform for student governance, legislative documents, and civic education at our institution. Built for transparency and accessibility.
