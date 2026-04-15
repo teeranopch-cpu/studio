@@ -1,7 +1,8 @@
+
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
-import { ShieldCheck, ArrowRight, Bell, FileSearch, GraduationCap } from "lucide-react"
+import { ShieldCheck, ArrowRight, Bell, FileSearch, GraduationCap, Scale } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
 import { PlaceHolderImages } from "@/lib/placeholder-images"
@@ -21,7 +22,7 @@ export default function Home() {
           data-ai-hint="government leadership"
         />
         <div className="container mx-auto px-6 relative z-10 text-white max-w-5xl">
-          <h1 className="text-5xl font-bold tracking-tight mb-4 drop-shadow-md">
+          <h1 className="text-5xl font-bold tracking-tight mb-4 drop-shadow-md text-white">
             ขอยินดีต้อนรับ <br />
             <span className="text-accent">
               สภาโรงเรียนศีขรภูมิพิสัย
@@ -38,15 +39,15 @@ export default function Home() {
           <Card className="shadow-xl border-none bg-white/80 backdrop-blur-sm group hover:translate-y-[-4px] transition-all">
             <CardHeader>
               <div className="h-12 w-12 rounded-xl bg-blue-100 flex items-center justify-center text-primary mb-4 group-hover:scale-110 transition-transform">
-                <ShieldCheck className="h-6 w-6" />
+                <Scale className="h-6 w-6" />
               </div>
-              <CardTitle className="text-xl font-bold">Legislative Archive</CardTitle>
-              <CardDescription>Official regulations and constitutions.</CardDescription>
+              <CardTitle className="text-xl font-bold">Roles & Duties</CardTitle>
+              <CardDescription>บทบาทหน้าที่ของสภาฯ</CardDescription>
             </CardHeader>
             <CardContent>
-              <p className="text-sm text-muted-foreground mb-4">Access the latest version of the Student Council Constitution and Ministry of Education regulations.</p>
+              <p className="text-sm text-muted-foreground mb-4">ศึกษารายละเอียดบทบาทหน้าที่ และความรับผิดชอบของคณะกรรมการสภานักเรียน</p>
               <Button variant="link" className="p-0 text-primary font-bold group-hover:translate-x-1 transition-transform" asChild>
-                <Link href="/archive">Open Repository <ArrowRight className="ml-1 h-3 w-3" /></Link>
+                <Link href="/roles">Learn More <ArrowRight className="ml-1 h-3 w-3" /></Link>
               </Button>
             </CardContent>
           </Card>

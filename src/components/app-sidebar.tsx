@@ -1,3 +1,4 @@
+
 "use client"
 
 import { 
@@ -7,7 +8,8 @@ import {
   LayoutDashboard, 
   ExternalLink, 
   Camera, 
-  ShieldCheck
+  ShieldCheck,
+  Scale
 } from "lucide-react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
@@ -26,7 +28,8 @@ import { cn } from "@/lib/utils"
 
 const navigation = [
   { name: "Dashboard", href: "/", icon: LayoutDashboard },
-  { name: "Personnel Registry", href: "/registry", icon: Users },
+  { name: "บทบาทหน้าที่", href: "/roles", icon: Scale },
+  { name: "บุคลากรสภาโรงเรียนศีขรภูมิพิสัย", href: "/registry", icon: Users },
   { name: "Civic Education Hub", href: "/education", icon: BookOpen },
   { name: "Document Archive", href: "/archive", icon: FileText },
   { name: "Activity Portfolio", href: "/activities", icon: Camera },

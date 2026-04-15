@@ -87,7 +87,7 @@ export default function RegistryPage() {
         <div>
           <h1 className="text-4xl font-bold text-primary mb-2 flex items-center gap-3">
             <Users className="h-10 w-10 text-accent" />
-            Personnel Registry
+            บุคลากรของสภาโรงเรียนศีขรภูมิพิสัย
           </h1>
           <p className="text-muted-foreground text-lg">Directory of Student Council members, faculty advisors, and administrators.</p>
         </div>
