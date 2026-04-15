@@ -28,7 +28,7 @@ export default function Home() {
             </span>
           </h1>
           <p className="text-xl text-primary-foreground/90 max-w-2xl mb-8 leading-relaxed font-medium">
-            The centralized platform for student governance, legislative documents, and civic education at our institution. Built for transparency and accessibility.
+            โรงเรียนศีขรภูมิพิสัย มุ่งพัฒนาคุณภาพและมาตรฐานการศึกษา จัดการศึกษาดี มีความรู้คู่คุณธรรม มุ่งเน้นด้านกีฬาและการศึกษา พัฒนาความสามารถและส่งเสริมความคิด 
           </p>
         </div>
       </div>
