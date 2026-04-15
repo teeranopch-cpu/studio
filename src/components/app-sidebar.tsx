@@ -3,11 +3,8 @@
 
 import { 
   Users, 
-  BookOpen, 
   FileText, 
   LayoutDashboard, 
-  ExternalLink, 
-  Camera, 
   ShieldCheck,
   Scale
 } from "lucide-react"
@@ -30,10 +27,7 @@ const navigation = [
   { name: "Dashboard", href: "/", icon: LayoutDashboard },
   { name: "บทบาทหน้าที่", href: "/roles", icon: Scale },
   { name: "บุคลากรสภาโรงเรียนศีขรภูมิพิสัย", href: "/registry", icon: Users },
-  { name: "Civic Education Hub", href: "/education", icon: BookOpen },
   { name: "Document Archive", href: "/archive", icon: FileText },
-  { name: "Activity Portfolio", href: "/activities", icon: Camera },
-  { name: "Resource Portal", href: "/portal", icon: ExternalLink },
 ]
 
 export function AppSidebar() {
