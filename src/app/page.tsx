@@ -75,11 +75,11 @@ export default function Home() {
             <div className="flex flex-col">
               <span className="text-[10px] uppercase font-black text-muted-foreground tracking-[0.2em]">Social Media</span>
               <Link 
-                href="https://www.facebook.com/skpstudentcouncil" 
+                href="https://www.facebook.com/studentcouncil.sps?rdid=zzCZikMNbDbiEqNo&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1E6G9DbBft%2F" 
                 target="_blank" 
                 className="text-base font-bold text-primary hover:text-accent transition-colors"
               >
-                สภานักเรียนโรงเรียนศีขรภูมิพิสัย
+                สภานักเรียนศีขรภูมิพิสัย
               </Link>
             </div>
           </div>
@@ -96,7 +96,7 @@ export default function Home() {
                 href="tel:044561243" 
                 className="text-base font-bold text-primary hover:text-accent transition-colors"
               >
-                044-561243
+                66+
               </a>
             </div>
           </div>

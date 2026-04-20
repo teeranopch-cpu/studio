@@ -83,8 +83,8 @@ export function AppSidebar() {
       </SidebarContent>
       <SidebarFooter className="p-4 border-t group-data-[collapsible=icon]:hidden">
         <div className="p-3 bg-secondary/30 rounded-xl border border-secondary/50">
-          <p className="text-[10px] font-bold text-primary uppercase tracking-widest mb-1">Democratic System</p>
-          <p className="text-[11px] text-muted-foreground leading-relaxed italic font-medium">"Governance for students, by students."</p>
+          <p className="text-[10px] font-bold text-primary uppercase tracking-widest mb-1">ระบบประชาธิปไตย</p>
+          <p className="text-[11px] text-muted-foreground leading-relaxed italic font-medium">"การปกครองโดยนักเรียน เพื่อนักเรียน"</p>
         </div>
       </SidebarFooter>
     </Sidebar>
