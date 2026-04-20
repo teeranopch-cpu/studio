@@ -127,35 +127,24 @@ export default function RolesPage() {
       </div>
 
       <div className="mt-16 bg-white rounded-3xl p-8 lg:p-12 shadow-xl border border-primary/5">
-        <div className="flex flex-col md:flex-row gap-12 items-center">
-          <div className="flex-1 space-y-6">
-            <div className="flex items-center gap-3 text-primary mb-2">
-              <Info className="h-6 w-6 text-accent" />
-              <h2 className="text-2xl font-bold">โครงสร้างและการบริหารงาน</h2>
-            </div>
-            <p className="text-muted-foreground leading-relaxed">
-              สภานักเรียนดำเนินงานภายใต้ระเบียบกระทรวงศึกษาธิการ โดยมีการแบ่งโครงสร้างการบริหารงานที่ชัดเจน 
-              ประกอบด้วยประธานสภานักเรียน รองประธาน เลขานุการ และคณะกรรมการฝ่ายต่างๆ 
-              ซึ่งมาจากการเลือกตั้งของนักเรียนอย่างเสรี
-            </p>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
-              <div className="p-4 rounded-2xl bg-secondary/20 border border-secondary">
-                <h4 className="font-bold text-primary mb-1">ความโปร่งใส</h4>
-                <p className="text-xs text-muted-foreground">ตรวจสอบได้ในทุกขั้นตอนการทำงาน</p>
-              </div>
-              <div className="p-4 rounded-2xl bg-secondary/20 border border-secondary">
-                <h4 className="font-bold text-primary mb-1">ความเท่าเทียม</h4>
-                <p className="text-xs text-muted-foreground">เคารพทุกความเห็นของเพื่อนนักเรียน</p>
-              </div>
-            </div>
+        <div className="max-w-4xl mx-auto space-y-6">
+          <div className="flex items-center gap-3 text-primary mb-2">
+            <Info className="h-6 w-6 text-accent" />
+            <h2 className="text-2xl font-bold">โครงสร้างและการบริหารงาน</h2>
           </div>
-          <div className="flex-1 w-full max-w-md">
-            <div className="aspect-[4/3] relative rounded-3xl overflow-hidden shadow-2xl border-8 border-white">
-              <img 
-                src="https://picsum.photos/seed/govrole/800/600" 
-                alt="Governance" 
-                className="object-cover w-full h-full"
-              />
+          <p className="text-muted-foreground leading-relaxed">
+            สภานักเรียนดำเนินงานภายใต้ระเบียบกระทรวงศึกษาธิการ โดยมีการแบ่งโครงสร้างการบริหารงานที่ชัดเจน 
+            ประกอบด้วยประธานสภานักเรียน รองประธาน เลขานุการ และคณะกรรมการฝ่ายต่างๆ 
+            ซึ่งมาจากการเลือกตั้งของนักเรียนอย่างเสรี
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+            <div className="p-4 rounded-2xl bg-secondary/20 border border-secondary">
+              <h4 className="font-bold text-primary mb-1">ความโปร่งใส</h4>
+              <p className="text-xs text-muted-foreground">ตรวจสอบได้ในทุกขั้นตอนการทำงาน</p>
+            </div>
+            <div className="p-4 rounded-2xl bg-secondary/20 border border-secondary">
+              <h4 className="font-bold text-primary mb-1">ความเท่าเทียม</h4>
+              <p className="text-xs text-muted-foreground">เคารพทุกความเห็นของเพื่อนนักเรียน</p>
             </div>
           </div>
         </div>
