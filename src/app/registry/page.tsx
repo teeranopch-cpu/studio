@@ -89,7 +89,7 @@ export default function RegistryPage() {
             <Users className="h-10 w-10 text-accent" />
             บุคลากรของสภาโรงเรียนศีขรภูมิพิสัย
           </h1>
-          <p className="text-muted-foreground text-lg">Directory of Student Council members, faculty advisors, and administrators.</p>
+          <p className="text-muted-foreground text-lg">รายชื่อสมาชิกสภานักเรียน อาจารย์ที่ปรึกษา และเจ้าหน้าที่ฝ่ายบริหาร</p>
         </div>
         <div className="relative w-full md:w-80">
           <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
@@ -104,10 +104,10 @@ export default function RegistryPage() {
 
       <Tabs defaultValue="all" className="mb-8" onValueChange={setActiveTab}>
         <TabsList className="bg-white/50 border h-auto p-1">
-          <TabsTrigger value="all" className="px-6 py-2">All Personnel</TabsTrigger>
-          <TabsTrigger value="council" className="px-6 py-2">Current Council</TabsTrigger>
-          <TabsTrigger value="faculty" className="px-6 py-2">Faculty & Admin</TabsTrigger>
-          <TabsTrigger value="past" className="px-6 py-2">Alumni</TabsTrigger>
+          <TabsTrigger value="all" className="px-6 py-2">บุคลากรทั้งหมด</TabsTrigger>
+          <TabsTrigger value="council" className="px-6 py-2">ผู้บริหารโรงเรียน</TabsTrigger>
+          <TabsTrigger value="faculty" className="px-6 py-2">สมาชิคสภานักเรียน</TabsTrigger>
+          <TabsTrigger value="past" className="px-6 py-2">ครูที่ปรึกษา</TabsTrigger>
         </TabsList>
       </Tabs>
 
