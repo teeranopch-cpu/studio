@@ -1,6 +1,11 @@
-
 {
   "placeholderImages": [
+    {
+      "id": "app-logo",
+      "description": "Student Council Logo",
+      "imageUrl": "https://lh3.googleusercontent.com/u/0/d/11T0z7Lj3ty9gP7FU-o9IKkNQJVRC0imr=w462-h346-p-k-nu-iv1?auditContext=thumbnail",
+      "imageHint": "school logo"
+    },
     {
       "id": "hero-gov",
       "description": "Student Council Governance",

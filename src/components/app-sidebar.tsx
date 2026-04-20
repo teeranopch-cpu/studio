@@ -1,15 +1,14 @@
-
 "use client"
 
 import { 
   Users, 
   FileText, 
   LayoutDashboard, 
-  ShieldCheck,
   Scale
 } from "lucide-react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
+import Image from "next/image"
 import {
   Sidebar,
   SidebarContent,
@@ -22,6 +21,7 @@ import {
   SidebarFooter
 } from "@/components/ui/sidebar"
 import { cn } from "@/lib/utils"
+import { PlaceHolderImages } from "@/lib/placeholder-images"
 
 const navigation = [
   { name: "หน้าแรก", href: "/", icon: LayoutDashboard },
@@ -32,16 +32,28 @@ const navigation = [
 
 export function AppSidebar() {
   const pathname = usePathname()
+  const logo = PlaceHolderImages.find(img => img.id === 'app-logo')
 
   return (
     <Sidebar collapsible="icon" className="border-r">
       <SidebarHeader className="p-4">
         <div className="flex items-center gap-3">
-          <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary text-primary-foreground shadow-sm">
-            <ShieldCheck className="h-6 w-6" />
+          <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-white overflow-hidden shadow-sm border">
+            {logo ? (
+              <Image 
+                src={logo.imageUrl} 
+                alt="Logo" 
+                width={40} 
+                height={40} 
+                className="object-contain"
+                data-ai-hint="school logo"
+              />
+            ) : (
+              <div className="bg-primary h-full w-full" />
+            )}
           </div>
           <div className="flex flex-col group-data-[collapsible=icon]:hidden">
-            <span className="font-bold text-lg leading-tight tracking-tight text-primary">StudentGov</span>
+            <span className="font-bold text-lg leading-tight tracking-tight text-primary">สภานักเรียน</span>
             <span className="text-xs font-medium text-muted-foreground">Official Portal</span>
           </div>
         </div>
