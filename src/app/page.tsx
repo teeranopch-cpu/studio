@@ -1,7 +1,6 @@
-
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Bell, FileSearch, Users, Scale, FileText } from "lucide-react"
+import { ArrowRight, Users, Scale, FileText } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
 import { PlaceHolderImages } from "@/lib/placeholder-images"
@@ -56,7 +55,7 @@ export default function Home() {
               <div className="h-12 w-12 rounded-xl bg-teal-100 flex items-center justify-center text-accent mb-4 group-hover:scale-110 transition-transform">
                 <Users className="h-6 w-6" />
               </div>
-              <CardTitle className="text-xl font-bold">Personnel Registry</CardTitle>
+              <CardTitle className="text-xl font-bold">บุคลากร</CardTitle>
               <CardDescription>Council members & advisors.</CardDescription>
             </CardHeader>
             <CardContent>
@@ -82,47 +81,6 @@ export default function Home() {
               </Button>
             </CardContent>
           </Card>
-        </div>
-
-        <div className="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div>
-            <h2 className="text-3xl font-bold text-primary mb-6 flex items-center gap-3">
-              <FileSearch className="h-8 w-8 text-accent" />
-              Integrated Governance
-            </h2>
-            <div className="space-y-6">
-              <div className="flex gap-4 p-4 rounded-xl bg-white shadow-sm border border-border/50">
-                <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center text-primary shrink-0">1</div>
-                <div>
-                  <h4 className="font-bold text-foreground">Registry Management</h4>
-                  <p className="text-sm text-muted-foreground">Keep track of all current and past student council members, their roles, and tenures.</p>
-                </div>
-              </div>
-              <div className="flex gap-4 p-4 rounded-xl bg-white shadow-sm border border-border/50">
-                <div className="h-10 w-10 rounded-full bg-accent/10 flex items-center justify-center text-accent shrink-0">2</div>
-                <div>
-                  <h4 className="font-bold text-foreground">Digital Archive</h4>
-                  <p className="text-sm text-muted-foreground">Centralized repository for all constitutional documents and school legislative records.</p>
-                </div>
-              </div>
-              <div className="flex gap-4 p-4 rounded-xl bg-white shadow-sm border border-border/50">
-                <div className="h-10 w-10 rounded-full bg-yellow-100 flex items-center justify-center text-yellow-600 shrink-0">3</div>
-                <div>
-                  <h4 className="font-bold text-foreground">Unified Search</h4>
-                  <p className="text-sm text-muted-foreground">Locate personnel, specific documents, and academic content instantly across the whole portal.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="relative aspect-video rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
-            <Image 
-              src="https://picsum.photos/seed/edu2/800/450" 
-              alt="หน้าแรก Preview" 
-              fill 
-              className="object-cover"
-              data-ai-hint="student leadership"
-            />
-          </div>
         </div>
       </div>
     </div>
