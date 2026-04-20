@@ -39,13 +39,13 @@ export function AppSidebar() {
     <Sidebar collapsible="icon" className="border-r">
       <SidebarHeader className="p-4">
         <div className="flex items-center gap-3">
-          <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-white overflow-hidden shadow-sm border border-primary/10 p-1">
+          <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-white overflow-hidden shadow-sm border border-primary/10">
             {logo ? (
               <Image 
                 src={logo.imageUrl} 
                 alt="Logo" 
-                width={44} 
-                height={44} 
+                width={48} 
+                height={48} 
                 className="object-contain"
                 data-ai-hint="school logo"
               />
