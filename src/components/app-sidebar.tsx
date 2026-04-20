@@ -1,3 +1,4 @@
+
 "use client"
 
 import { 
@@ -38,13 +39,13 @@ export function AppSidebar() {
     <Sidebar collapsible="icon" className="border-r">
       <SidebarHeader className="p-4">
         <div className="flex items-center gap-3">
-          <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-white overflow-hidden shadow-sm border">
+          <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-white overflow-hidden shadow-sm border border-primary/10 p-1">
             {logo ? (
               <Image 
                 src={logo.imageUrl} 
                 alt="Logo" 
-                width={40} 
-                height={40} 
+                width={44} 
+                height={44} 
                 className="object-contain"
                 data-ai-hint="school logo"
               />
@@ -52,9 +53,9 @@ export function AppSidebar() {
               <div className="bg-primary h-full w-full" />
             )}
           </div>
-          <div className="flex flex-col group-data-[collapsible=icon]:hidden">
-            <span className="font-bold text-lg leading-tight tracking-tight text-primary">สภานักเรียน</span>
-            <span className="text-xs font-medium text-muted-foreground">Official Portal</span>
+          <div className="flex flex-col group-data-[collapsible=icon]:hidden overflow-hidden">
+            <span className="font-bold text-lg leading-tight tracking-tight text-primary truncate">สภานักเรียน</span>
+            <span className="text-[10px] font-bold text-muted-foreground uppercase tracking-wider">Official Portal</span>
           </div>
         </div>
       </SidebarHeader>
@@ -84,9 +85,9 @@ export function AppSidebar() {
         </SidebarGroup>
       </SidebarContent>
       <SidebarFooter className="p-4 border-t group-data-[collapsible=icon]:hidden">
-        <div className="p-3 bg-secondary/50 rounded-xl">
-          <p className="text-[11px] font-semibold text-secondary-foreground uppercase tracking-widest mb-1">Democratic System</p>
-          <p className="text-xs text-muted-foreground leading-relaxed italic">"Governance for students, by students."</p>
+        <div className="p-3 bg-secondary/30 rounded-xl border border-secondary/50">
+          <p className="text-[10px] font-bold text-primary uppercase tracking-widest mb-1">Democratic System</p>
+          <p className="text-[11px] text-muted-foreground leading-relaxed italic font-medium">"Governance for students, by students."</p>
         </div>
       </SidebarFooter>
     </Sidebar>
