@@ -24,7 +24,7 @@ import {
 import { cn } from "@/lib/utils"
 
 const navigation = [
-  { name: "Dashboard", href: "/", icon: LayoutDashboard },
+  { name: "หน้าแรก", href: "/", icon: LayoutDashboard },
   { name: "บทบาทหน้าที่", href: "/roles", icon: Scale },
   { name: "บุคลากรสภาโรงเรียนศีขรภูมิพิสัย", href: "/registry", icon: Users },
   { name: "Document Archive", href: "/archive", icon: FileText },

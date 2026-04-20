@@ -40,7 +40,7 @@ export default function Home() {
               <div className="h-12 w-12 rounded-xl bg-blue-100 flex items-center justify-center text-primary mb-4 group-hover:scale-110 transition-transform">
                 <Scale className="h-6 w-6" />
               </div>
-              <CardTitle className="text-xl font-bold">Roles & Duties</CardTitle>
+              <CardTitle className="text-xl font-bold">สภานักเรียน</CardTitle>
               <CardDescription>บทบาทหน้าที่ของสภาฯ</CardDescription>
             </CardHeader>
             <CardContent>
@@ -117,7 +117,7 @@ export default function Home() {
           <div className="relative aspect-video rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
             <Image 
               src="https://picsum.photos/seed/edu2/800/450" 
-              alt="Dashboard Preview" 
+              alt="หน้าแรก Preview" 
               fill 
               className="object-cover"
               data-ai-hint="student leadership"
