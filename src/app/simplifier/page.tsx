@@ -4,7 +4,7 @@ import { useState } from "react"
 import { Textarea } from "@/components/ui/textarea"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
-import { Sparkles, FileText, Send, BookOpen, AlertCircle, Copy, Check } from "lucide-react"
+import { Sparkles, FileText, Send, AlertCircle, Copy, Check } from "lucide-react"
 import { simplifyDocument, type SimplifyDocumentOutput } from "@/ai/flows/simplify-document"
 import { Badge } from "@/components/ui/badge"
 import { Skeleton } from "@/components/ui/skeleton"
@@ -161,7 +161,7 @@ export default function SimplifierPage() {
         <div>
           <h4 className="font-bold text-foreground">AI Transparency Note</h4>
           <p className="text-sm text-muted-foreground leading-relaxed">
-            This tool uses Generative AI to simplify documents. While it is highly accurate, it should be used for educational purposes and better understanding only. For legal matters, always refer back to the official original documents available in the <span className="text-primary font-bold">Document Archive</span>.
+            This tool uses Generative AI to simplify documents. While it is highly accurate, it should be used for educational purposes and better understanding only.
           </p>
         </div>
       </div>

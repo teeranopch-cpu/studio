@@ -1,9 +1,7 @@
-
 "use client"
 
 import { 
   Users, 
-  FileText, 
   LayoutDashboard, 
   Scale
 } from "lucide-react"
@@ -28,7 +26,6 @@ const navigation = [
   { name: "หน้าแรก", href: "/", icon: LayoutDashboard },
   { name: "บทบาทหน้าที่", href: "/roles", icon: Scale },
   { name: "บุคลากรสภาโรงเรียนศีขรภูมิพิสัย", href: "/registry", icon: Users },
-  { name: "Document Archive", href: "/archive", icon: FileText },
 ]
 
 export function AppSidebar() {

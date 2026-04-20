@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Users, Scale, FileText } from "lucide-react"
+import { ArrowRight, Users, Scale } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
 import { PlaceHolderImages } from "@/lib/placeholder-images"
@@ -32,8 +32,8 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="container mx-auto px-6 -mt-12 mb-16 max-w-6xl">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div className="container mx-auto px-6 -mt-12 mb-16 max-w-4xl">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <Card className="shadow-xl border-none bg-white/80 backdrop-blur-sm group hover:translate-y-[-4px] transition-all">
             <CardHeader>
               <div className="h-12 w-12 rounded-xl bg-blue-100 flex items-center justify-center text-primary mb-4 group-hover:scale-110 transition-transform">
@@ -62,22 +62,6 @@ export default function Home() {
               <p className="text-sm text-muted-foreground mb-4">View the directory of current student council members, faculty advisors, and staff.</p>
               <Button variant="link" className="p-0 text-accent font-bold group-hover:translate-x-1 transition-transform" asChild>
                 <Link href="/registry">View Directory <ArrowRight className="ml-1 h-3 w-3" /></Link>
-              </Button>
-            </CardContent>
-          </Card>
-
-          <Card className="shadow-xl border-none bg-white/80 backdrop-blur-sm group hover:translate-y-[-4px] transition-all">
-            <CardHeader>
-              <div className="h-12 w-12 rounded-xl bg-yellow-100 flex items-center justify-center text-yellow-600 mb-4 group-hover:scale-110 transition-transform">
-                <FileText className="h-6 w-6" />
-              </div>
-              <CardTitle className="text-xl font-bold">Document Archive</CardTitle>
-              <CardDescription>Official records & policies.</CardDescription>
-            </CardHeader>
-            <CardContent>
-              <p className="text-sm text-muted-foreground mb-4">Access the official repository for school constitutions, regulations, and announcements.</p>
-              <Button variant="link" className="p-0 text-yellow-600 font-bold group-hover:translate-x-1 transition-transform" asChild>
-                <Link href="/archive">Open Archive <ArrowRight className="ml-1 h-3 w-3" /></Link>
               </Button>
             </CardContent>
           </Card>
