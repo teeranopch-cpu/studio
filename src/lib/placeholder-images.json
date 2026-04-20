@@ -1,6 +1,12 @@
 {
   "placeholderImages": [
     {
+      "id": "app-logo",
+      "description": "Srikhorapumpisai School Student Council Logo",
+      "imageUrl": "https://drive.google.com/uc?export=view&id=13Ercx-3ve1lrSWn_vuylovh_3H7cYu55",
+      "imageHint": "school logo"
+    },
+    {
       "id": "hero-gov",
       "description": "Student Council Governance",
       "imageUrl": "https://drive.google.com/uc?export=view&id=1heaAYQiH156D_vOQCq6pPm3Q1WyNj7cK",
