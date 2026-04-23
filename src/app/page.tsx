@@ -96,7 +96,7 @@ export default function Home() {
                 href="tel:044561243" 
                 className="text-base font-bold text-primary hover:text-accent transition-colors"
               >
-                044-561243
+                062-254-2364
               </a>
             </div>
           </div>

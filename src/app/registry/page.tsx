@@ -11,7 +11,7 @@ import Image from "next/image"
 import { PlaceHolderImages } from "@/lib/placeholder-images"
 
 const personnel = [
-  { name: "Thanaphon Suksom", role: "Council President", tenure: "2569", category: "Council", avatar: "https://picsum.photos/seed/p1/200/200", initials: "TS" },
+  { name: "Thanaphon Suksom", role: "Council President", tenure: "2569", category: "Council", avatar: "https://drive.google.com/uc?export=view&id=114UwCsa79_VdKHpaQSnnsfHfJ9KVcHoB", initials: "TS" },
   { name: "Arisa Wongrat", role: "Vice President", tenure: "2569", category: "Council", avatar: "https://picsum.photos/seed/p2/200/200", initials: "AW" },
   { name: "Dr. Somchai Rakthai", role: "Faculty Advisor", tenure: "2569", category: "Faculty", avatar: "https://picsum.photos/seed/p3/200/200", initials: "SR" },
   { name: "Kanya Phetcha", role: "Secretary General", tenure: "2569", category: "Council", avatar: "https://picsum.photos/seed/p4/200/200", initials: "KP" },
