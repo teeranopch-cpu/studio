@@ -86,7 +86,7 @@ const personnel = [
     role: "รองประธานกลุ่มบริหารทั่วไป", 
     category: "สภานักเรียน",
     tenure: "2569", 
-    avatar: "https://picsum.photos/seed/council1/400/600"
+    avatar: "https://drive.google.com/uc?export=view&id=1PmF4jNKAV35DKfvIe_FOJGSlPkw96UIr"
   },
   { 
     name: "Phanuwut Thothong", 
@@ -95,7 +95,7 @@ const personnel = [
     role: "รองประธานกลุ่มบริหารกิจการ", 
     category: "สภานักเรียน",
     tenure: "2569", 
-    avatar: "https://picsum.photos/seed/council2/400/600"
+    avatar: "https://drive.google.com/uc?export=view&id=1hUqNN9vK98OChx-Nj3aHjx5a2qmp-FP0"
   },
   { 
     name: "Siriyaporn Takernglab", 
@@ -104,7 +104,7 @@ const personnel = [
     role: " รองประธานกลุ่มบริหารวิชาการ", 
     category: "สภานักเรียน",
     tenure: "2569", 
-    avatar: "https://picsum.photos/seed/council3/400/600"
+    avatar: "https://drive.google.com/uc?export=view&id=1PD0-Rf9fMtwfKYXAEDD0NAMKiG9xUiww"
   },
   { 
     name: "Pannapat Thongman ", 
@@ -113,7 +113,7 @@ const personnel = [
     role: "รองประธานกลุ่มบริหารอำนวยการ", 
     category: "สภานักเรียน",
     tenure: "2569", 
-    avatar: "https://picsum.photos/seed/council4/400/600"
+    avatar: "https://drive.google.com/uc?export=view&id=1N2YWLpasv7ANvMzJ8hRY5DASi9HtSoXT"
   },
   { 
     name: "Rujikan  Pinphet", 
@@ -122,16 +122,16 @@ const personnel = [
     role: "เลขานุการ", 
     category: "สภานักเรียน",
     tenure: "2569", 
-    avatar: "https://picsum.photos/seed/council5/400/600"
+    avatar: "https://drive.google.com/uc?export=view&id=1rMciCkLxXVf70iCOizfUZeL8QQCvZn_X"
   },
   { 
-    name: "Fah Manee", 
+    name: "Wachiraya Sawangpetch ", 
     thaiName: "วชิรญา แสวงเพชร", 
-    nickname: "ชื่อเล่น: อีฟ (Eve)", 
+    nickname: "ชื่อเล่น: Kwankao (ขวัญข้าว)", 
     role: "รองเลขานุการ", 
     category: "สภานักเรียน",
     tenure: "2569", 
-    avatar: "https://picsum.photos/seed/council6/400/600"
+    avatar: "https://drive.google.com/uc?export=view&id=11eifAmlU8SPHd9tcuUzvnPo_LwvBuNwm"
   },
   { 
     name: "Salisa Jaikham", 
@@ -140,7 +140,7 @@ const personnel = [
     role: " หัวหน้าฝ่ายเหรัญญิก", 
     category: "สภานักเรียน",
     tenure: "2569", 
-    avatar: "https://picsum.photos/seed/council7/400/600"
+    avatar: "https://drive.google.com/uc?export=view&id=1TUVdls2FeVsZ00JxXJ3r7fAwVER98_qR"
   },
   { 
     name: "Nuntikan urai", 
@@ -149,7 +149,7 @@ const personnel = [
     role: "รองหัวหน้าฝ่ายเหรัญญิก", 
     category: "สภานักเรียน",
     tenure: "2569", 
-    avatar: "https://picsum.photos/seed/council8/400/600"
+    avatar: "https://drive.google.com/uc?export=view&id=1n395-wdBEMEyG0UljzcW-D8eKr5w7c8_"
   },
   { 
     name: "Punjarat DuangAek ", 
@@ -158,7 +158,7 @@ const personnel = [
     role: "หัวหน้าฝ่ายสำนักงาน", 
     category: "สภานักเรียน",
     tenure: "2569", 
-    avatar: "https://picsum.photos/seed/council9/400/600"
+    avatar: "https://drive.google.com/uc?export=view&id=1709ZKSDCHm1BiOvDfFh6kOhl0y5-z_9O"
   },
   { 
     name: "Kanyarat Boonluea", 
@@ -167,7 +167,7 @@ const personnel = [
     role: " รองหัวหน้าฝ่ายสำนักงาน", 
     category: "สภานักเรียน",
     tenure: "2569", 
-    avatar: "https://picsum.photos/seed/council10/400/600"
+    avatar: "https://drive.google.com/uc?export=view&id=1mO4Y9vB_97k-b7TrWuGDLpw8NHt9hsmZ"
   },
   { 
     name: "Ketsarin  Naklamthong", 
@@ -179,13 +179,13 @@ const personnel = [
     avatar: "https://drive.google.com/uc?export=view&id=1Ocy5hyx-6SnrHYh22cH3OMiGlbRo_pss"
   },
   { 
-    name: "Ladda Kaewdee", 
+    name: "Nerakwan Namkot", 
     thaiName: "เณฤขวัญ นามโคตร ", 
-    nickname: "ชื่อเล่น: แนน (Nan)", 
+    nickname: "ชื่อเล่น: Kwan(ขวัญ)", 
     role: "รองหัวหน้าฝ่ายทะเบียนและธุรการ", 
     category: "สภานักเรียน",
     tenure: "2569", 
-    avatar: "https://picsum.photos/seed/council12/400/600"
+    avatar: "https://drive.google.com/uc?export=view&id=1dRGGxr8qGRj6bAAV2Yu4sGpe6NgM-V9G"
   },
   { 
     name: "Marisa kongkaew", 
@@ -194,7 +194,7 @@ const personnel = [
     role: "คณะกรรมการฝ่ายทะเบียนและธุรการ", 
     category: "สภานักเรียน",
     tenure: "2569", 
-    avatar: "https://picsum.photos/seed/council13/400/600"
+    avatar: "https://drive.google.com/uc?export=view&id=1vkVN-bzrxsV5YZngs2bTsE131yiPot1Q"
   },
   { 
     name: "Wachirawit Rattanathiwat", 
@@ -203,7 +203,7 @@ const personnel = [
     role: "หัวหน้าฝ่ายวัดและประเมินผล", 
     category: "สภานักเรียน",
     tenure: "2569", 
-    avatar: "https://picsum.photos/seed/council14/400/600"
+    avatar: "https://drive.google.com/uc?export=view&id=1V542lM2s26S5u1v3xpn9XWHaomSM2sex"
   },
   { 
     name: "Saranporn Wuttiya", 
@@ -212,7 +212,16 @@ const personnel = [
     role: "  รองหัวหน้าฝ่ายวัดและประเมินผล", 
     category: "สภานักเรียน",
     tenure: "2569", 
-    avatar: "https://picsum.photos/seed/council15/400/600"
+    avatar: "https://drive.google.com/uc?export=view&id=1OsPDTGhWzu2dy3HqApOCeg3u6m5RkyJw"
+  },
+  {
+    name: "Nuttawut Wannont",
+    thaiName: "ณัฐวุฒิ วานนท์",
+    nickname: "ชื่อเล่น: Pond(ปอนด์))",
+    role: "คณะกรรมการฝ่ายวัดและประเมินผล",
+    category: "สภานักเรียน",
+    tenure: "2569",
+    avatar: "https://drive.google.com/uc?export=view&id=1MN3PrVuFqt8MyXQ9bA7-kBqjwguOMJ49"
   },
   { 
     name: "Charuwit  Phokham", 
@@ -221,7 +230,7 @@ const personnel = [
     role: "หัวหน้าฝ่ายบูรณาการประชาธิปไตย", 
     category: "สภานักเรียน",
     tenure: "2569", 
-    avatar: "https://picsum.photos/seed/council16/400/600"
+    avatar: "https://drive.google.com/uc?export=view&id=1AICjoj1g6-yNcvp32-Tz333CMLX0UzAw"
   },
   { 
     name: "Kittikawin Prasongkaew", 
@@ -230,16 +239,16 @@ const personnel = [
     role: "รองหัวหน้าฝ่ายบูรณาการประชาธิปไตย", 
     category: "สภานักเรียน",
     tenure: "2569", 
-    avatar: "https://picsum.photos/seed/council17/400/600"
+    avatar: "https://drive.google.com/uc?export=view&id=1w4rh5ivvWrv9eeWh7n32UYKb-PJsj559"
   },
   { 
-    name: "Somsak Kaew", 
+    name: "Rattaphong Taemthong", 
     thaiName: "รัฐพงษ์ แต้มทอง ", 
-    nickname: "ชื่อเล่น: ต่าย (Tai)", 
+    nickname: "ชื่อเล่น: Champ(แชมป์)", 
     role: "คณะกรรมการฝ่ายบูรณาการประชาธิปไตย", 
     category: "สภานักเรียน",
     tenure: "2569", 
-    avatar: "https://picsum.photos/seed/council18/400/600"
+    avatar: "https://drive.google.com/uc?export=view&id=1W06r7TyB1zsrC6ulVaUkN5R2O9TaKzFM"
   },
   { 
     name: "Thanwarat Phomthong", 
@@ -248,7 +257,7 @@ const personnel = [
     role: "คณะกรรมการฝ่ายบูรณาการประชาธิปไตย", 
     category: "สภานักเรียน",
     tenure: "2569", 
-    avatar: "https://picsum.photos/seed/council19/400/600"
+    avatar: "https://drive.google.com/uc?export=view&id=1N4o8AXb4qbRPD6K3Br7HfMoOqNRkmp-K"
   },
   { 
     name: "Teeranop Chuadoem ", 
@@ -257,7 +266,7 @@ const personnel = [
     role: " หัวหน้าฝ่ายเทคโนโลยี", 
     category: "สภานักเรียน",
     tenure: "2569", 
-    avatar: "https://picsum.photos/seed/council20/400/600"
+    avatar: "https://drive.google.com/uc?export=view&id=1VS90vZa3_yypO46Dh-HL9nRE22u9rVyR"
   },
   { 
     name: "Krittapas boonyong", 
@@ -266,7 +275,7 @@ const personnel = [
     role: "รองหัวหน้าฝ่ายเทคโนโลยี  ", 
     category: "สภานักเรียน",
     tenure: "2569", 
-    avatar: "https://picsum.photos/seed/council21/400/600"
+    avatar: "https://drive.google.com/uc?export=view&id=1dGi98G8x4mB4SsPNiaiE1a1FpXs2g00f"
   },
   { 
     name: "Numchai Ngamkhuntod", 
@@ -275,7 +284,7 @@ const personnel = [
     role: "คณะกรรมการฝ่ายเทคโนโลยี", 
     category: "สภานักเรียน",
     tenure: "2569", 
-    avatar: "https://picsum.photos/seed/council22/400/600"
+    avatar: "https://drive.google.com/uc?export=view&id=1Vdwp17Ss_SIIcYuHQ-Cbh5C_Nw5egkg8"
   },
   { 
     name: "Aksaraphak Lamunmon", 
@@ -284,7 +293,7 @@ const personnel = [
     role: "หัวหน้าฝ่ายประชาสัมพันธ์", 
     category: "สภานักเรียน",
     tenure: "2569", 
-    avatar: "https://picsum.photos/seed/council23/400/600"
+    avatar: "https://drive.google.com/uc?export=view&id=18woh300PY20vd4AX3vUR46JMH_6-4NxL"
   },
   { 
     name: "Malinee Nava", 
@@ -293,16 +302,16 @@ const personnel = [
     role: "รองหัวหน้าฝ่ายประชาสัมพันธ์", 
     category: "สภานักเรียน",
     tenure: "2569", 
-    avatar: "https://picsum.photos/seed/council24/400/600"
+    avatar: "https://drive.google.com/uc?export=view&id=1Sw61iDKXuKeNJqEuo0VziJ6oQh4cwqHZ"
   },
   { 
-    name: "Zom Rak", 
+    name: "Satra Sukyu ", 
     thaiName: "ศาสตรา สุขอยู่", 
-    nickname: "ชื่อเล่น: แคน (Can)", 
+    nickname: "ชื่อเล่น:Bake(เบค)", 
     role: " คณะกรรมการฝ่ายประชาสัมพันธ์", 
     category: "สภานักเรียน",
     tenure: "2569", 
-    avatar: "https://picsum.photos/seed/council25/400/600"
+    avatar: "https://drive.google.com/uc?export=view&id=1nQ5YXkbf_5JjerMCMNyn46HTuo18QnwN"
   },
   { 
     name: "Khunlaphat Datthuyawat", 
@@ -311,7 +320,34 @@ const personnel = [
     role: " คณะกรรมการฝ่ายประชาสัมพันธ์", 
     category: "สภานักเรียน",
     tenure: "2569", 
-    avatar: "https://picsum.photos/seed/council26/400/600"
+    avatar: "https://drive.google.com/uc?export=view&id=1aiALBzXZrn-U-wB0vukaaPQ0WzpfeZlu"
+  },
+  {
+    name: "Teeranun Moothong",
+    thaiName: "ธีรนันท์ หมู่ทอง",
+    nickname: "ชื่อเล่น: Baimon(ใบหม่อน)",
+    role: "หัวหน้าฝ่ายพิธีการและนันทนาการ",
+    category: "สภานักเรียน",
+    tenure: "2569",
+    avatar: "https://drive.google.com/uc?export=view&id=1HPpoQNSwHMUU1NbIAwWJgf-sU7mdH5iO"
+  },
+  {
+    name: "Kongkapan Pimnon",
+    thaiName: "คงกะพัน พิมพ์นนท์",
+    nickname: "ชื่อเล่น:Kao (เก้า)",
+    role: "รองหัวหน้าฝ่ายพิธีการและนันทนาการ",
+    category: "สภานักเรียน",
+    tenure: "2569",
+    avatar: "https://drive.google.com/uc?export=view&id=1kLlepb0F4kZRPZWvuRjta8ZAV27F-jzK"
+  },
+  {
+    name: "Patcharee Moomthong",
+    thaiName: "พัชรี มุมทอง",
+    nickname: "ชื่อเล่น: Fome(โฟม)",
+    role: "คณะกรรมการฝ่ายพิธีการและนันทนาการ",
+    category: "สภานักเรียน",
+    tenure: "2569",
+    avatar: "https://drive.google.com/uc?export=view&id=1bGhhwoHJlHmpGfsvlenUx-qB1Q4FBTYg"
   },
   { 
     name: "Piyawat chanthamon", 
@@ -320,7 +356,7 @@ const personnel = [
     role: "หัวหน้าฝ่ายปกครองและวินัยนักเรียน", 
     category: "สภานักเรียน",
     tenure: "2569", 
-    avatar: "https://picsum.photos/seed/council27/400/600"
+    avatar: "https://drive.google.com/uc?export=view&id=1kNp_98OIuojBHzfmBsSDMiOkKq2bpzqM"
   },
   { 
     name: "Patiphon Krongthong ", 
@@ -329,7 +365,7 @@ const personnel = [
     role: "รองหัวหน้าฝ่ายปกครองและวินัยนักเรียน", 
     category: "สภานักเรียน",
     tenure: "2569", 
-    avatar: "https://picsum.photos/seed/council28/400/600"
+    avatar: "https://drive.google.com/uc?export=view&id=1MOCF47dmg-3NkTcxQaylnhK4ThDFWuut"
   },
   { 
     name: "Prapada suksombat", 
@@ -338,7 +374,7 @@ const personnel = [
     role: " หัวหน้าฝ่ายประสานงาน", 
     category: "สภานักเรียน",
     tenure: "2569", 
-    avatar: "https://picsum.photos/seed/council29/400/600"
+    avatar: "https://drive.google.com/uc?export=view&id=1NwmDCtd0rO3wPBalGxgV_JnqWpAA5x7y"
   },
   { 
     name: "Thitinan Chong-ngam", 
@@ -347,7 +383,7 @@ const personnel = [
     role: "รองหัวหน้าฝ่ายประสานงาน", 
     category: "สภานักเรียน",
     tenure: "2569", 
-    avatar: "https://picsum.photos/seed/council30/400/600"
+    avatar: "https://drive.google.com/uc?export=view&id=1_yLDJdPhrAcL8AusfR3sZ2yjtmvVTrxZ"
   },
   { 
     name: "Taweewat Phaombandit", 
@@ -356,7 +392,7 @@ const personnel = [
     role: " หัวหน้าฝ่ายกิจกรรม", 
     category: "สภานักเรียน",
     tenure: "2569", 
-    avatar: "https://picsum.photos/seed/council31/400/600"
+    avatar: "https://drive.google.com/uc?export=view&id=1faorfvF4ul3mugp4drfB4H-jAR6spyIJ"
   },
   { 
     name: "Pitchanan kathisart", 
@@ -365,7 +401,7 @@ const personnel = [
     role: "รองหัวหน้าฝ่ายกิจกรรม", 
     category: "สภานักเรียน",
     tenure: "2569", 
-    avatar: "https://picsum.photos/seed/council32/400/600"
+    avatar: "https://drive.google.com/uc?export=view&id=14PuwxYexUPYVYGYexYkFbE3jDV8LBFqU"
   },
   { 
     name: "Araya sriken", 
@@ -374,7 +410,7 @@ const personnel = [
     role: " คณะกรรมการฝ่ายกิจกรรม", 
     category: "สภานักเรียน",
     tenure: "2569", 
-    avatar: "https://picsum.photos/seed/council33/400/600"
+    avatar: "https://drive.google.com/uc?export=view&id=1yDDo0IvL_5JksbzFKjcFQrnYdYD5OJCk"
   },
   { 
     name: "Jedsadapond Sudhorm", 
@@ -383,16 +419,16 @@ const personnel = [
     role: "หัวหน้าฝ่ายกีฬา", 
     category: "สภานักเรียน",
     tenure: "2569", 
-    avatar: "https://picsum.photos/seed/council34/400/600"
+    avatar: "https://drive.google.com/uc?export=view&id=1JJgmdc2ee2e69WylQccDQl23MMUYrGj8"
   },
   { 
-    name: "Jira Rak", 
+    name: "Rangsarn Thongtha", 
     thaiName: "รังสรรค์ ทองทา", 
-    nickname: "ชื่อเล่น: มิน (Min)", 
+    nickname: "ชื่อเล่น: Gun(กัน)", 
     role: "  รองหัวหน้าฝ่ายกีฬา", 
     category: "สภานักเรียน",
     tenure: "2569", 
-    avatar: "https://picsum.photos/seed/council35/400/600"
+    avatar: "https://drive.google.com/uc?export=view&id=10P81MyC9yq2VuXCoEjPpa_-YLBSAC27N"
   },
   { 
     name: "Surasak Wawisai", 
@@ -401,7 +437,7 @@ const personnel = [
     role: "หัวหน้าฝ่ายศิลปวัฒนธรรม", 
     category: "สภานักเรียน",
     tenure: "2569", 
-    avatar: "https://picsum.photos/seed/council36/400/600"
+    avatar: "https://drive.google.com/uc?export=view&id=1f_UsTbLmCDpRFjxSGYEqmzHUXLeDj0HC"
   },
   { 
     name: "Wirakorn Meeying", 
@@ -410,7 +446,7 @@ const personnel = [
     role: "  รองหัวหน้าฝ่ายศิลปวัฒนธรรม", 
     category: "สภานักเรียน",
     tenure: "2569", 
-    avatar: "https://picsum.photos/seed/council37/400/600"
+    avatar: "https://drive.google.com/uc?export=view&id=1PZ65IfnQTE8tnWD4ZNPfX-EvWYvLBGW1"
   },
   { 
     name: "Korrawit Yingharn ", 
@@ -419,16 +455,16 @@ const personnel = [
     role: "หัวหน้าฝ่ายอาคารสถานที่", 
     category: "สภานักเรียน",
     tenure: "2569", 
-    avatar: "https://picsum.photos/seed/council38/400/600"
+    avatar: "https://drive.google.com/uc?export=view&id=1PBJHOOti6_HxdUQ12J0Sae_CHGEQeMlv"
   },
   { 
-    name: "Niran Sai", 
+    name: "Pongsakorn Kaewta", 
     thaiName: "พงศกร แก้วตา", 
-    nickname: "ชื่อเล่น: แพร (Prae)", 
+    nickname: "ชื่อเล่น: Top(ท็อป)", 
     role: " รองหัวหน้าฝ่ายอาคารสถานที่", 
     category: "สภานักเรียน",
     tenure: "2569", 
-    avatar: "https://picsum.photos/seed/council39/400/600"
+    avatar: "https://drive.google.com/uc?export=view&id=1iWJZydHH6k7_ZunIGeXl8yXN34hfbQd5"
   },
   { 
     name: "Chaiwat Chandam", 
@@ -437,16 +473,16 @@ const personnel = [
     role: " คณะกรรมการฝ่ายอาคารสถานที่", 
     category: "สภานักเรียน",
     tenure: "2569", 
-    avatar: "https://picsum.photos/seed/council40/400/600"
+    avatar: "https://drive.google.com/uc?export=view&id=1Ry6QfrE01G521Q05Nczmst9FXSuq9qEB"
   },
   { 
-    name: "Porn Chuadoem", 
-    thaiName: "ณิฐพล ชัยชนะ", 
-    nickname: "ชื่อเล่น: เรน (Rain)", 
+    name: "Nithaphon Chaichana ", 
+    thaiName: "นิฐพล   ชัยชนะ", 
+    nickname: "ชื่อเล่น: Frame(เฟรม)", 
     role: "คณะกรรมการฝ่ายอาคารสถานที่", 
     category: "สภานักเรียน",
     tenure: "2569", 
-    avatar: "https://picsum.photos/seed/council41/400/600"
+    avatar: "https://drive.google.com/uc?export=view&id=1yDEl_GX7Big5xcNTg6kkN6z6B_Rc6oz9"
   },
   { 
     name: "Piyamon Sukprajum", 
@@ -455,16 +491,16 @@ const personnel = [
     role: " หัวหน้าฝ่ายปฏิคม", 
     category: "สภานักเรียน",
     tenure: "2569", 
-    avatar: "https://picsum.photos/seed/council42/400/600"
+    avatar: "https://drive.google.com/uc?export=view&id=1sCpahuFuhKO1tVpLcxXkeW89RIDiIobZ"
   },
   { 
-    name: "Ruj Sukdee", 
+    name: "Nichada Ngerntom", 
     thaiName: "นิชาดา เงินถม   ", 
-    nickname: "ชื่อเล่น: ติ๊ก (Tik)", 
+    nickname: "ชื่อเล่น: View(วิว)", 
     role: " รองหัวหน้าฝ่ายปฏิคม", 
     category: "สภานักเรียน",
     tenure: "2569", 
-    avatar: "https://picsum.photos/seed/council43/400/600"
+    avatar: "https://drive.google.com/uc?export=view&id=1WuMWM4zQgXxjL8IHauD8RpN7hwbu7hxw"
   },
   { 
     name: "Natthida Satthatham", 
@@ -473,7 +509,7 @@ const personnel = [
     role: " คณะกรรมการฝ่ายปฏิคม", 
     category: "สภานักเรียน",
     tenure: "2569", 
-    avatar: "https://picsum.photos/seed/council44/400/600"
+    avatar: "https://drive.google.com/uc?export=view&id=1KSyPp_strqMDMuY_cTKGDJ8RwyOQPMSL"
   },
   { 
     name: "Teeradech Saokaew", 
@@ -482,7 +518,7 @@ const personnel = [
     role: "คณะกรรมการฝ่ายปฏิคม", 
     category: "สภานักเรียน",
     tenure: "2569", 
-    avatar: "https://picsum.photos/seed/council45/400/600"
+    avatar: "https://drive.google.com/uc?export=view&id=1AXDp-w13qpZBRm_8oszaWuXEXAcG2vE4"
   },
   { 
     name: "Sarawut Siriphat", 
@@ -491,7 +527,7 @@ const personnel = [
     role: " คณะกรรมการฝ่ายปฏิคม", 
     category: "สภานักเรียน",
     tenure: "2569", 
-    avatar: "https://picsum.photos/seed/council46/400/600"
+    avatar: "https://drive.google.com/uc?export=view&id=1Q4UyHPtTql3gbF6ZqC4NBubissx0aItn"
   },
   { 
     name: "Pawanrat Sangpetch", 
@@ -500,16 +536,16 @@ const personnel = [
     role: "หัวหน้าฝ่ายพยาบาล", 
     category: "สภานักเรียน",
     tenure: "2569", 
-    avatar: "https://picsum.photos/seed/council47/400/600"
+    avatar: "https://drive.google.com/uc?export=view&id=1R7-R6bMcR3njBBZTiLV9cTsfPZZVJN0A"
   },
   { 
-    name: "Wasin Kaew", 
+    name: "Waralak Klinchan", 
     thaiName: "วราลักษณ์ กลิ่นจันทร์ ", 
-    nickname: "ชื่อเล่น: แซด (Zad)", 
+    nickname: "ชื่อเล่น: Kaem(แก้ม)", 
     role: "รองหัวหน้าฝ่ายพยาบาล", 
     category: "สภานักเรียน",
     tenure: "2569", 
-    avatar: "https://picsum.photos/seed/council48/400/600"
+    avatar: "https://drive.google.com/uc?export=view&id=1se1h2NeGe-8rVVzl7v9VWtbjb51bg2aI"
   },
   { 
     name: "Pannipa Samransom", 
@@ -518,7 +554,7 @@ const personnel = [
     role: "หัวหน้าฝ่ายเครือข่ายสัมพันธ์", 
     category: "สภานักเรียน",
     tenure: "2569", 
-    avatar: "https://picsum.photos/seed/council49/400/600"
+    avatar: "https://drive.google.com/uc?export=view&id=1DaXHqh-VPQiMtpXo4nACEZ2ZGQdADzlE"
   },
   { 
     name: "Teerawat Kaewlar", 
@@ -527,52 +563,7 @@ const personnel = [
     role: "   รองหัวหน้าเครือข่ายสัมพันธ์", 
     category: "สภานักเรียน",
     tenure: "2569", 
-    avatar: "https://picsum.photos/seed/council50/400/600"
-  },
-  { 
-    name: "Zoe Chuadoem", 
-    thaiName: "โซอี้ ช่วยเดิม", 
-    nickname: "ชื่อเล่น: ซี (Cee)", 
-    role: "กรรมการฝ่ายกิจกรรม", 
-    category: "สภานักเรียน",
-    tenure: "2569", 
-    avatar: "https://picsum.photos/seed/council51/400/600"
-  },
-  { 
-    name: "Ake Kaewdee", 
-    thaiName: "เอก แก้วดี", 
-    nickname: "ชื่อเล่น: โดม (Dome)", 
-    role: "กรรมการฝ่ายวิชาการ", 
-    category: "สภานักเรียน",
-    tenure: "2569", 
-    avatar: "https://picsum.photos/seed/council52/400/600"
-  },
-  { 
-    name: "Bell Sukdee", 
-    thaiName: "เบล สุขดี", 
-    nickname: "ชื่อเล่น: ฝ้าย (Fai)", 
-    role: "กรรมการฝ่ายกีฬา", 
-    category: "สภานักเรียน",
-    tenure: "2569", 
-    avatar: "https://picsum.photos/seed/council53/400/600"
-  },
-  { 
-    name: "Chin Prom", 
-    thaiName: "ชิน พรหม", 
-    nickname: "ชื่อเล่น: เก่ง (Keng)", 
-    role: "กรรมการฝ่ายประชาสัมพันธ์", 
-    category: "สภานักเรียน",
-    tenure: "2569", 
-    avatar: "https://picsum.photos/seed/council54/400/600"
-  },
-  { 
-    name: "Dew Rak", 
-    thaiName: "ดิว รัก", 
-    nickname: "ชื่อเล่น: หลุยส์ (Louis)", 
-    role: "กรรมการฝ่ายสารวัตรนักเรียน", 
-    category: "สภานักเรียน",
-    tenure: "2569", 
-    avatar: "https://picsum.photos/seed/council55/400/600"
+    avatar: "https://drive.google.com/uc?export=view&id=16xBm0DTMJE6Q_zHQswEZrdXeQijhfbBA"
   }
 ]
 
