@@ -51,13 +51,13 @@ const personnel = [
 
   // คุณครูที่ปรึกษา (2 members)
   { 
-    name: "Mrs. Noi Jaisa-ard", 
-    thaiName: "นางน้อย ใจสะอาด", 
-    nickname: "ชื่อเล่น: น้อย (Noi)", 
+    name: "Phumin kensakhu", 
+    thaiName: "ภูมินทร์ เกณสาคู", 
+    nickname: "ชื่อเล่น: Tae(ครูเต้)", 
     role: "ครูที่ปรึกษาสภานักเรียนหลัก", 
     category: "คุณครูที่ปรึกษา",
     tenure: "2569", 
-    avatar: "https://picsum.photos/seed/adv1/400/600"
+    avatar: "https://drive.google.com/uc?export=view&id=1WqoRdivjVNHPMBPqs1LKcKSMnMmZqlBm"
   },
   { 
     name: "Mr. Viroj Lim", 
