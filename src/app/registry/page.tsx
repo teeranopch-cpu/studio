@@ -11,29 +11,21 @@ import Image from "next/image"
 import { PlaceHolderImages } from "@/lib/placeholder-images"
 
 const personnel = [
+  // Executive Board (4 members)
   { 
     name: "Natthapron khrueawan", 
     thaiName: "ณัฐพร เครือวัลย์", 
-    nickname: "กิ่งเก้า (Ging Gao)", 
-    role: "ประธานสภานักเรียน", 
+    nickname: "Ging Gao (กิ่งเก้า)", 
+    role: "ประธานสภานักเรียน (Executive Board)", 
     category: "Student Council",
     tenure: "2569", 
     avatar: "https://drive.google.com/uc?export=view&id=114UwCsa79_VdKHpaQSnnsfHfJ9KVcHoB"
   },
   { 
-    name: "Teeranop Chuadoem", 
-    thaiName: "นายธีรนพ เชื้อเดิม", 
-    nickname: "Solar (โซล่า)", 
-    role: "หัวหน้าฝ่ายเทคโนโลยีและโสตทัศนศึกษา", 
-    category: "Student Council",
-    tenure: "2569", 
-    avatar: "https://picsum.photos/seed/p2/400/600" 
-  },
-  { 
     name: "Kanya Phetcha", 
     thaiName: "กัญญา เพชรฉ่ำ", 
     nickname: "Kwan (ขวัญ)", 
-    role: "รองประธานคนที่ 1", 
+    role: "รองประธานคนที่ 1 (Executive Board)", 
     category: "Student Council",
     tenure: "2569", 
     avatar: "https://picsum.photos/seed/p4/400/600" 
@@ -42,7 +34,7 @@ const personnel = [
     name: "Viroj Lim", 
     thaiName: "วิโรจน์ ลิ้ม", 
     nickname: "Vee (วี)", 
-    role: "รองประธานคนที่ 2", 
+    role: "รองประธานคนที่ 2 (Executive Board)", 
     category: "Student Council",
     tenure: "2569", 
     avatar: "https://picsum.photos/seed/p5/400/600" 
@@ -51,20 +43,12 @@ const personnel = [
     name: "Sompong Bunmee", 
     thaiName: "สมพงษ์ บุญมี", 
     nickname: "Pong (พงษ์)", 
-    role: "เลขานุการ", 
+    role: "เลขานุการ (Executive Board)", 
     category: "Student Council",
     tenure: "2569", 
     avatar: "https://picsum.photos/seed/p7/400/600" 
   },
-  { 
-    name: "Malee Jaisa-ard", 
-    thaiName: "มาลี ใจสะอาด", 
-    nickname: "Mali (มะลิ)", 
-    role: "เหรัญญิก", 
-    category: "Student Council",
-    tenure: "2569", 
-    avatar: "https://picsum.photos/seed/p8/400/600" 
-  },
+  // Advisory Teachers (2 members)
   { 
     name: "Dr. Somchai Rakthai", 
     thaiName: "ดร.สมชาย รักไทย", 
@@ -83,41 +67,25 @@ const personnel = [
     tenure: "2569", 
     avatar: "https://picsum.photos/seed/p10/400/600" 
   },
-  { 
-    name: "Pichai Jaruek", 
-    thaiName: "พิชัย จารึก", 
-    nickname: "Ek (เอก)", 
-    role: "อดีตประธานสภานักเรียน", 
-    category: "Student Council",
-    tenure: "2568", 
-    avatar: "https://picsum.photos/seed/p6/400/600" 
-  },
-  { 
-    name: "Prasert Kaewdee", 
-    thaiName: "ประเสริฐ แก้วดี", 
-    nickname: "Sert (เสริฐ)", 
-    role: "หัวหน้าฝ่ายอาคารสถานที่", 
-    category: "Student Council",
-    tenure: "2569", 
-    avatar: "https://picsum.photos/seed/p9/400/600" 
-  },
-  ...Array.from({ length: 45 }).map((_, i) => {
+  // Rest of the Council (49 members to reach 55)
+  ...Array.from({ length: 49 }).map((_, i) => {
     const roles = [
+      "หัวหน้าฝ่ายเทคโนโลยี", "หัวหน้าฝ่ายอาคารสถานที่", "เหรัญญิก", 
       "กรรมการฝ่ายกิจกรรม", "กรรมการฝ่ายวิชาการ", "กรรมการฝ่ายกีฬา", 
-      "กรรมการฝ่ายประชาสัมพันธ์", "กรรมการฝ่ายสารวัตรนักเรียน", "ประธานนักเรียนชั้นมัธยมศึกษา"
+      "กรรมการฝ่ายประชาสัมพันธ์", "กรรมการฝ่ายสารวัตรนักเรียน"
     ];
-    const firstNames = ["Anan", "Boon", "Chai", "Duang", "Erawan", "Fah", "Gai", "Hathai", "Itt", "Jit"];
-    const lastNames = ["Sukdee", "Prom", "Rak", "Manee", "Wattana", "Kaew", "Sai", "Porn", "Ying", "Viroj"];
-    const nicknames = ["Arm", "Ball", "Cake", "Dew", "Eve", "Fern", "Golf", "Hut", "Ice", "Joy"];
+    const firstNames = ["Teeranop", "Prasert", "Malee", "Anan", "Boon", "Chai", "Duang", "Erawan", "Fah", "Gai"];
+    const lastNames = ["Chuadoem", "Kaewdee", "Jaisa-ard", "Sukdee", "Prom", "Rak", "Manee", "Wattana", "Kaew", "Sai"];
+    const nicknames = ["Solar", "Sert", "Mali", "Arm", "Ball", "Cake", "Dew", "Eve", "Fern", "Golf"];
     
     return {
       name: `${firstNames[i % 10]} ${lastNames[(i + 3) % 10]}`,
-      thaiName: `นาย/นางสาว ${firstNames[i % 10]}นามสมมติ`,
+      thaiName: `นาย/นางสาว ${firstNames[i % 10]} นามสมมติ`,
       nickname: `${nicknames[i % 10]} (${nicknames[i % 10]}ไทย)`,
       role: roles[i % roles.length],
       category: "Student Council",
       tenure: "2569",
-      avatar: `https://picsum.photos/seed/p${i + 11}/400/600`
+      avatar: `https://picsum.photos/seed/extra${i + 1}/400/600`
     };
   })
 ]
@@ -137,21 +105,10 @@ export default function RegistryPage() {
     return matchesSearch && matchesTab;
   })
 
-  const getCategoryIcon = (category: string) => {
-    switch (category) {
-      case "Advisor": return <GraduationCap className="h-3.5 w-3.5" />;
-      case "Former": return <Star className="h-3.5 w-3.5" />;
-      default: return <Shield className="h-3.5 w-3.5" />;
-    }
-  }
-
-  const getCategoryLabel = (category: string) => {
-    switch (category) {
-      case "Advisor": return "อาจารย์ที่ปรึกษา";
-      case "Former": return "อดีตสภาฯ";
-      case "Student Council": return "สภานักเรียน";
-      default: return category;
-    }
+  const getCategoryIcon = (role: string) => {
+    if (role.includes("ที่ปรึกษา")) return <GraduationCap className="h-3.5 w-3.5" />;
+    if (role.includes("Executive")) return <Star className="h-3.5 w-3.5" />;
+    return <Shield className="h-3.5 w-3.5" />;
   }
 
   return (
@@ -211,7 +168,7 @@ export default function RegistryPage() {
                 <div className="space-y-1.5">
                   <div className="flex items-center gap-2 mb-2">
                     <Badge variant="secondary" className="bg-accent/10 text-accent border-none text-[10px] font-bold px-2 py-0">
-                      {getCategoryLabel(person.category)}
+                      {person.category}
                     </Badge>
                   </div>
                   
@@ -228,7 +185,7 @@ export default function RegistryPage() {
                   
                   <div className="flex items-center gap-2 text-xs font-semibold text-foreground/70 pt-2 border-t border-border/30 mt-2">
                     <span className="text-accent shrink-0">
-                      {getCategoryIcon(person.category)}
+                      {getCategoryIcon(person.role)}
                     </span>
                     <span className="truncate">{person.role}</span>
                   </div>
