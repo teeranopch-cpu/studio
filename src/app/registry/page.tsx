@@ -15,7 +15,7 @@ const personnel = [
   { 
     name: "Dr. Prasert Wattana", 
     thaiName: "ดร.ประเสริฐ วัฒนา", 
-    nickname: "ชื่อเล่น: เสริฐ (Sert)", 
+    nickname: "", 
     role: "ผู้อำนวยการโรงเรียน", 
     category: "คณะผู้บริหารโรงเรียน",
     tenure: "2569", 
@@ -24,7 +24,7 @@ const personnel = [
   { 
     name: "Mrs. Malee Srisuwan", 
     thaiName: "นางมาลี ศรีสุวรรณ", 
-    nickname: "ชื่อเล่น: มะลิ (Mali)", 
+    nickname: "", 
     role: "รองผู้อำนวยการฝ่ายบริหาร", 
     category: "คณะผู้บริหารโรงเรียน",
     tenure: "2569", 
@@ -33,7 +33,7 @@ const personnel = [
   { 
     name: "Mr. Somchai Rakthai", 
     thaiName: "นายสมชาย รักไทย", 
-    nickname: "ชื่อเล่น: ชัย (Chai)", 
+    nickname: "", 
     role: "รองผู้อำนวยการฝ่ายวิชาการ", 
     category: "คณะผู้บริหารโรงเรียน",
     tenure: "2569", 
@@ -42,7 +42,7 @@ const personnel = [
   { 
     name: "Ms. Kanya Phetcha", 
     thaiName: "นางสาวกัญญา เพชรฉ่ำ", 
-    nickname: "ชื่อเล่น: ขวัญ (Kwan)", 
+    nickname: "", 
     role: "รองผู้อำนวยการฝ่ายกิจกรรม", 
     category: "คณะผู้บริหารโรงเรียน",
     tenure: "2569", 
@@ -66,7 +66,7 @@ const personnel = [
     role: "ครูที่ปรึกษาฝ่ายส่งเสริมประชาธิปไตย", 
     category: "คุณครูที่ปรึกษา",
     tenure: "2569", 
-    avatar: "https://picsum.photos/seed/adv2/400/600"
+    avatar: "https://drive.google.com/uc?export=view&id=15oQb27Bqewrj71EutQL2_vgeu9MB6L9a"
   },
 
   // สภานักเรียน (55 members)
@@ -179,7 +179,7 @@ const personnel = [
     avatar: "https://drive.google.com/uc?export=view&id=1Ocy5hyx-6SnrHYh22cH3OMiGlbRo_pss"
   },
   { 
-    name: "Nerakwan Namkot", 
+    name: "Nerukwan Narmkot", 
     thaiName: "เณฤขวัญ นามโคตร ", 
     nickname: "ชื่อเล่น: Kwan(ขวัญ)", 
     role: "รองหัวหน้าฝ่ายทะเบียนและธุรการ", 
