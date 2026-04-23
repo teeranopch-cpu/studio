@@ -27,80 +27,102 @@ const personnel = [
     role: "หัวหน้าฝ่ายเทคโนโลยีและโสตทัศนศึกษา", 
     category: "Student Council",
     tenure: "2569", 
-    avatar: "https://picsum.photos/seed/p2/200/200" 
-  },
-  { 
-    name: "Dr. Somchai Rakthai", 
-    thaiName: "ดร.สมชาย รักไทย", 
-    nickname: "Chai (ชัย)", 
-    role: "Faculty Advisor", 
-    category: "Advisor",
-    tenure: "2569", 
-    avatar: "https://picsum.photos/seed/p3/200/200" 
+    avatar: "https://picsum.photos/seed/p2/400/600" 
   },
   { 
     name: "Kanya Phetcha", 
     thaiName: "กัญญา เพชรฉ่ำ", 
     nickname: "Kwan (ขวัญ)", 
-    role: "Secretary General", 
+    role: "รองประธานคนที่ 1", 
     category: "Student Council",
     tenure: "2569", 
-    avatar: "https://picsum.photos/seed/p4/200/200" 
+    avatar: "https://picsum.photos/seed/p4/400/600" 
   },
   { 
     name: "Viroj Lim", 
     thaiName: "วิโรจน์ ลิ้ม", 
     nickname: "Vee (วี)", 
-    role: "Academic Affairs", 
+    role: "รองประธานคนที่ 2", 
     category: "Student Council",
     tenure: "2569", 
-    avatar: "https://picsum.photos/seed/p5/200/200" 
-  },
-  { 
-    name: "Pichai Jaruek", 
-    thaiName: "พิชัย จารึก", 
-    nickname: "Ek (เอก)", 
-    role: "Former President", 
-    category: "Former",
-    tenure: "2568", 
-    avatar: "https://picsum.photos/seed/p6/200/200" 
+    avatar: "https://picsum.photos/seed/p5/400/600" 
   },
   { 
     name: "Sompong Bunmee", 
     thaiName: "สมพงษ์ บุญมี", 
     nickname: "Pong (พงษ์)", 
-    role: "Treasurer", 
+    role: "เลขานุการ", 
     category: "Student Council",
     tenure: "2569", 
-    avatar: "https://picsum.photos/seed/p7/200/200" 
+    avatar: "https://picsum.photos/seed/p7/400/600" 
   },
   { 
     name: "Malee Jaisa-ard", 
     thaiName: "มาลี ใจสะอาด", 
     nickname: "Mali (มะลิ)", 
-    role: "Public Relations", 
+    role: "เหรัญญิก", 
     category: "Student Council",
     tenure: "2569", 
-    avatar: "https://picsum.photos/seed/p8/200/200" 
+    avatar: "https://picsum.photos/seed/p8/400/600" 
   },
   { 
-    name: "Prasert Kaewdee", 
-    thaiName: "ประเสริฐ แก้วดี", 
-    nickname: "Sert (เสริฐ)", 
-    role: "Welfare Officer", 
-    category: "Student Council",
+    name: "Dr. Somchai Rakthai", 
+    thaiName: "ดร.สมชาย รักไทย", 
+    nickname: "Chai (ชัย)", 
+    role: "อาจารย์ที่ปรึกษาหลัก", 
+    category: "Advisor",
     tenure: "2569", 
-    avatar: "https://picsum.photos/seed/p9/200/200" 
+    avatar: "https://picsum.photos/seed/p3/400/600" 
   },
   { 
     name: "Noi Srisuwan", 
     thaiName: "น้อย ศรีสุวรรณ", 
     nickname: "Noi (น้อย)", 
-    role: "Science Dept Head", 
+    role: "อาจารย์ที่ปรึกษาฝ่ายกิจกรรม", 
     category: "Advisor",
     tenure: "2569", 
-    avatar: "https://picsum.photos/seed/p10/200/200" 
-  }
+    avatar: "https://picsum.photos/seed/p10/400/600" 
+  },
+  { 
+    name: "Pichai Jaruek", 
+    thaiName: "พิชัย จารึก", 
+    nickname: "Ek (เอก)", 
+    role: "อดีตประธานสภานักเรียน", 
+    category: "Former",
+    tenure: "2568", 
+    avatar: "https://picsum.photos/seed/p6/400/600" 
+  },
+  { 
+    name: "Prasert Kaewdee", 
+    thaiName: "ประเสริฐ แก้วดี", 
+    nickname: "Sert (เสริฐ)", 
+    role: "หัวหน้าฝ่ายอาคารสถานที่", 
+    category: "Student Council",
+    tenure: "2569", 
+    avatar: "https://picsum.photos/seed/p9/400/600" 
+  },
+  // Adding more entries to reach 55
+  ...Array.from({ length: 45 }).map((_, i) => {
+    const categories = ["Student Council", "Advisor", "Former"];
+    const cat = i < 30 ? categories[0] : (i < 38 ? categories[1] : categories[2]);
+    const roles = [
+      "กรรมการฝ่ายกิจกรรม", "กรรมการฝ่ายวิชาการ", "กรรมการฝ่ายกีฬา", 
+      "กรรมการฝ่ายประชาสัมพันธ์", "กรรมการฝ่ายสารวัตรนักเรียน", "ประธานนักเรียนชั้นมัธยมศึกษา"
+    ];
+    const firstNames = ["Anan", "Boon", "Chai", "Duang", "Erawan", "Fah", "Gai", "Hathai", "Itt", "Jit"];
+    const lastNames = ["Sukdee", "Prom", "Rak", "Manee", "Wattana", "Kaew", "Sai", "Porn", "Ying", "Viroj"];
+    const nicknames = ["Arm", "Ball", "Cake", "Dew", "Eve", "Fern", "Golf", "Hut", "Ice", "Joy"];
+    
+    return {
+      name: `${firstNames[i % 10]} ${lastNames[(i + 3) % 10]}`,
+      thaiName: `นาย/นางสาว ${firstNames[i % 10]}นามสมมติ`,
+      nickname: `${nicknames[i % 10]} (${nicknames[i % 10]}ไทย)`,
+      role: roles[i % roles.length],
+      category: cat,
+      tenure: cat === "Former" ? "2567" : "2569",
+      avatar: `https://picsum.photos/seed/p${i + 11}/400/600`
+    };
+  })
 ]
 
 export default function RegistryPage() {
@@ -136,7 +158,7 @@ export default function RegistryPage() {
   }
 
   return (
-    <div className="container mx-auto py-12 px-6 max-w-6xl">
+    <div className="container mx-auto py-12 px-6 max-w-7xl">
       <div className="flex flex-col gap-8 mb-12">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
           <div>
@@ -144,7 +166,7 @@ export default function RegistryPage() {
               <Users className="h-10 w-10 text-accent" />
               บุคลากรของสภาโรงเรียนศีขรภูมิพิสัย
             </h1>
-            <p className="text-muted-foreground text-lg">รายชื่อสมาชิกสภานักเรียน อาจารย์ที่ปรึกษา และเจ้าหน้าที่ฝ่ายบริหาร</p>
+            <p className="text-muted-foreground text-lg">รายชื่อสมาชิกสภานักเรียน อาจารย์ที่ปรึกษา และอดีตคณะกรรมการ ({personnel.length} ท่าน)</p>
           </div>
           <div className="relative w-full md:w-80">
             <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
@@ -159,7 +181,7 @@ export default function RegistryPage() {
 
         <Tabs defaultValue="all" className="w-full" onValueChange={setActiveTab}>
           <TabsList className="bg-white border p-1 h-auto flex-wrap">
-            <TabsTrigger value="all" className="px-6 py-2">ทั้งหมด</TabsTrigger>
+            <TabsTrigger value="all" className="px-6 py-2">ทั้งหมด ({personnel.length})</TabsTrigger>
             <TabsTrigger value="Student Council" className="px-6 py-2">สภานักเรียน</TabsTrigger>
             <TabsTrigger value="Advisor" className="px-6 py-2">อาจารย์ที่ปรึกษา</TabsTrigger>
             <TabsTrigger value="Former" className="px-6 py-2">อดีตคณะกรรมการ</TabsTrigger>
@@ -167,7 +189,7 @@ export default function RegistryPage() {
         </Tabs>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-6">
         {filtered.map((person, idx) => (
           <Card key={idx} className="overflow-hidden border-none shadow-lg hover:shadow-2xl transition-all group flex flex-col h-full bg-white">
             <CardContent className="p-0 flex flex-col h-full">
@@ -177,6 +199,7 @@ export default function RegistryPage() {
                   alt={person.name} 
                   fill 
                   className="object-cover group-hover:scale-105 transition-transform duration-700"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 20vw"
                 />
               </div>
               
