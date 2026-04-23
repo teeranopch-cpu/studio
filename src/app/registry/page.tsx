@@ -194,7 +194,7 @@ const personnel = [
     role: "คณะกรรมการฝ่ายทะเบียนและธุรการ", 
     category: "สภานักเรียน",
     tenure: "2569", 
-    avatar: "https://drive.google.com/uc?export=view&id=1vkVN-bzrxsV5YZngs2bTsE131yiPot1Q"
+    avatar: "https://drive.google.com/uc?export=view&id=1kCxq3SPjbocJg6z2Ukx0n3-s8wGiCkvW"
   },
   { 
     name: "Wachirawit Rattanathiwat", 
@@ -455,7 +455,7 @@ const personnel = [
     role: "หัวหน้าฝ่ายอาคารสถานที่", 
     category: "สภานักเรียน",
     tenure: "2569", 
-    avatar: "https://drive.google.com/uc?export=view&id=1PBJHOOti6_HxdUQ12J0Sae_CHGEQeMlv"
+    avatar: "https://drive.google.com/uc?export=view&id=1nkJrHtzEK9tLfY6XZPGoZXkG7KjAs1tW"
   },
   { 
     name: "Pongsakorn Kaewta", 
