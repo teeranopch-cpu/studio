@@ -69,7 +69,7 @@ const personnel = [
     avatar: "https://picsum.photos/seed/adv2/400/600"
   },
 
-  // สภานักเรียน (49 members - starting with the core leaders)
+  // สภานักเรียน (55 members)
   { 
     name: "Thanaphon Suksom", 
     thaiName: "ธนภณ สุขสม", 
@@ -79,7 +79,7 @@ const personnel = [
     tenure: "2569", 
     avatar: "https://drive.google.com/uc?export=view&id=114UwCsa79_VdKHpaQSnnsfHfJ9KVcHoB"
   },
-  ...Array.from({ length: 48 }).map((_, i) => {
+  ...Array.from({ length: 54 }).map((_, i) => {
     const roles = [
       "รองประธานคนที่ 1", "รองประธานคนที่ 2", "เลขานุการ", "เหรัญญิก",
       "หัวหน้าฝ่ายเทคโนโลยี", "หัวหน้าฝ่ายอาคารสถานที่", 
