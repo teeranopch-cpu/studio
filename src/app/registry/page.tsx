@@ -6,18 +6,18 @@ import { Input } from "@/components/ui/input"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { Search, Users, Shield, User, GraduationCap, Star } from "lucide-react"
+import { Search, Users, Shield, GraduationCap, Star } from "lucide-react"
 import Image from "next/image"
 import { PlaceHolderImages } from "@/lib/placeholder-images"
 
 const personnel = [
-  // คณะผู้บริหารโรงเรียน (Executive Board - 4 members)
+  // Previous Executive Board members - now categorized as Student Council
   { 
-    name: "Natthapron khrueawan", 
-    thaiName: "ณัฐพร เครือวัลย์", 
-    nickname: "Ging Gao (กิ่งเก้า)", 
+    name: "Thanaphon Suksom", 
+    thaiName: "ธนภณ สุขสม", 
+    nickname: "Note (โน้ต)", 
     role: "ประธานสภานักเรียน", 
-    category: "คณะผู้บริหารโรงเรียน",
+    category: "สภานักเรียน",
     tenure: "2569", 
     avatar: "https://drive.google.com/uc?export=view&id=114UwCsa79_VdKHpaQSnnsfHfJ9KVcHoB"
   },
@@ -26,7 +26,7 @@ const personnel = [
     thaiName: "กัญญา เพชรฉ่ำ", 
     nickname: "Kwan (ขวัญ)", 
     role: "รองประธานคนที่ 1", 
-    category: "คณะผู้บริหารโรงเรียน",
+    category: "สภานักเรียน",
     tenure: "2569", 
     avatar: "https://picsum.photos/seed/p4/400/600" 
   },
@@ -35,7 +35,7 @@ const personnel = [
     thaiName: "วิโรจน์ ลิ้ม", 
     nickname: "Vee (วี)", 
     role: "รองประธานคนที่ 2", 
-    category: "คณะผู้บริหารโรงเรียน",
+    category: "สภานักเรียน",
     tenure: "2569", 
     avatar: "https://picsum.photos/seed/p5/400/600" 
   },
@@ -44,17 +44,17 @@ const personnel = [
     thaiName: "สมพงษ์ บุญมี", 
     nickname: "Pong (พงษ์)", 
     role: "เลขานุการ", 
-    category: "คณะผู้บริหารโรงเรียน",
+    category: "สภานักเรียน",
     tenure: "2569", 
     avatar: "https://picsum.photos/seed/p7/400/600" 
   },
-  // คุณครูที่ปรึกษา (Advisory Teachers - 2 members)
+  // Previous Advisory Teachers - now categorized as Student Council
   { 
     name: "Dr. Somchai Rakthai", 
     thaiName: "ดร.สมชาย รักไทย", 
     nickname: "Chai (ชัย)", 
     role: "อาจารย์ที่ปรึกษาหลัก", 
-    category: "คุณครูที่ปรึกษา",
+    category: "สภานักเรียน",
     tenure: "2569", 
     avatar: "https://picsum.photos/seed/p3/400/600" 
   },
@@ -63,11 +63,11 @@ const personnel = [
     thaiName: "น้อย ศรีสุวรรณ", 
     nickname: "Noi (น้อย)", 
     role: "อาจารย์ที่ปรึกษาฝ่ายกิจกรรม", 
-    category: "คุณครูที่ปรึกษา",
+    category: "สภานักเรียน",
     tenure: "2569", 
     avatar: "https://picsum.photos/seed/p10/400/600" 
   },
-  // สภานักเรียน (Rest of the Council - 49 members)
+  // Rest of the Council (49 members)
   ...Array.from({ length: 49 }).map((_, i) => {
     const roles = [
       "หัวหน้าฝ่ายเทคโนโลยี", "หัวหน้าฝ่ายอาคารสถานที่", "เหรัญญิก", 
@@ -77,11 +77,12 @@ const personnel = [
     const firstNames = ["Teeranop", "Prasert", "Malee", "Anan", "Boon", "Chai", "Duang", "Erawan", "Fah", "Gai"];
     const lastNames = ["Chuadoem", "Kaewdee", "Jaisa-ard", "Sukdee", "Prom", "Rak", "Manee", "Wattana", "Kaew", "Sai"];
     const nicknames = ["Solar", "Sert", "Mali", "Arm", "Ball", "Cake", "Dew", "Eve", "Fern", "Golf"];
+    const nicknamesThai = ["โซล่า", "เสริฐ", "มะลิ", "อาร์ม", "บอล", "เค้ก", "ดิว", "อีฟ", "เฟิร์น", "กอล์ฟ"];
     
     return {
       name: `${firstNames[i % 10]} ${lastNames[(i + 3) % 10]}`,
       thaiName: `นาย/นางสาว ${firstNames[i % 10]} นามสมมติ`,
-      nickname: `${nicknames[i % 10]} (${nicknames[i % 10]}ไทย)`,
+      nickname: `${nicknames[i % 10]} (${nicknamesThai[i % 10]})`,
       role: roles[i % roles.length],
       category: "สภานักเรียน",
       tenure: "2569",
@@ -136,9 +137,9 @@ export default function RegistryPage() {
         <Tabs defaultValue="all" className="w-full" onValueChange={setActiveTab}>
           <TabsList className="bg-white border p-1 h-auto flex-wrap">
             <TabsTrigger value="all" className="px-6 py-2">ทั้งหมด ({personnel.length})</TabsTrigger>
-            <TabsTrigger value="คณะผู้บริหารโรงเรียน" className="px-6 py-2">คณะผู้บริหารโรงเรียน</TabsTrigger>
-            <TabsTrigger value="คุณครูที่ปรึกษา" className="px-6 py-2">คุณครูที่ปรึกษา</TabsTrigger>
-            <TabsTrigger value="สภานักเรียน" className="px-6 py-2">สภานักเรียน</TabsTrigger>
+            <TabsTrigger value="คณะผู้บริหารโรงเรียน" className="px-6 py-2">คณะผู้บริหารโรงเรียน (0)</TabsTrigger>
+            <TabsTrigger value="คุณครูที่ปรึกษา" className="px-6 py-2">คุณครูที่ปรึกษา (0)</TabsTrigger>
+            <TabsTrigger value="สภานักเรียน" className="px-6 py-2">สภานักเรียน ({personnel.length})</TabsTrigger>
           </TabsList>
         </Tabs>
       </div>
@@ -174,15 +175,17 @@ export default function RegistryPage() {
                     </Badge>
                   </div>
                   
-                  <h3 className="text-lg font-bold text-primary group-hover:text-accent transition-colors leading-tight">
-                    {person.name}
-                  </h3>
-                  <p className="text-sm font-bold text-foreground/80 leading-tight">
-                    {person.thaiName}
-                  </p>
-                  <p className="text-xs font-medium text-muted-foreground italic pt-1">
-                    ชื่อเล่น: {person.nickname}
-                  </p>
+                  <div className="space-y-0.5">
+                    <h3 className="text-lg font-bold text-primary group-hover:text-accent transition-colors leading-tight">
+                      {person.name}
+                    </h3>
+                    <p className="text-sm font-bold text-foreground/80 leading-tight">
+                      {person.thaiName}
+                    </p>
+                    <p className="text-xs font-medium text-muted-foreground italic pt-1">
+                      ชื่อเล่น: {person.nickname}
+                    </p>
+                  </div>
                   
                   <div className="flex items-center gap-2 text-xs font-semibold text-foreground/70 pt-2 border-t border-border/30 mt-3">
                     <span className="text-accent shrink-0">
@@ -206,10 +209,11 @@ export default function RegistryPage() {
       {filtered.length === 0 && (
         <div className="text-center py-20 bg-white rounded-3xl border border-dashed border-muted-foreground/30">
           <Users className="h-16 w-16 text-muted mx-auto mb-4" />
-          <h3 className="text-xl font-bold text-muted-foreground">ไม่พบบุคลากรที่ค้นหา</h3>
-          <p className="text-muted-foreground">โปรดลองใช้คำค้นหาอื่นหรือปรับฟิลเตอร์</p>
+          <h3 className="text-xl font-bold text-muted-foreground">ไม่พบบุคลากรในหมวดนี้</h3>
+          <p className="text-muted-foreground">โปรดลองเลือกหมวดหมู่อื่นหรือเปลี่ยนคำค้นหา</p>
         </div>
       )}
     </div>
   )
 }
+
