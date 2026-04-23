@@ -11,61 +11,61 @@ import Image from "next/image"
 import { PlaceHolderImages } from "@/lib/placeholder-images"
 
 const personnel = [
-  { name: "Thanaphon Suksom", role: "Council President", tenure: "2569", category: "Council", avatar: "https://drive.google.com/uc?export=view&id=114UwCsa79_VdKHpaQSnnsfHfJ9KVcHoB", initials: "TS" },
-  { name: "Arisa Wongrat", role: "Vice President", tenure: "2569", category: "Council", avatar: "https://picsum.photos/seed/p2/200/200", initials: "AW" },
-  { name: "Dr. Somchai Rakthai", role: "Faculty Advisor", tenure: "2569", category: "Faculty", avatar: "https://picsum.photos/seed/p3/200/200", initials: "SR" },
-  { name: "Kanya Phetcha", role: "Secretary General", tenure: "2569", category: "Council", avatar: "https://picsum.photos/seed/p4/200/200", initials: "KP" },
-  { name: "Viroj Lim", role: "Academic Affairs Administrator", tenure: "2569", category: "Administration", avatar: "https://picsum.photos/seed/p5/200/200", initials: "VL" },
-  { name: "Pichai Jaruek", role: "Former President", tenure: "2569", category: "Past Members", avatar: "https://picsum.photos/seed/p6/200/200", initials: "PJ" },
-  { name: "Sompong Bunmee", role: "Treasurer", tenure: "2569", category: "Council", avatar: "https://picsum.photos/seed/p7/200/200", initials: "SB" },
-  { name: "Malee Jaisa-ard", role: "Public Relations", tenure: "2569", category: "Council", avatar: "https://picsum.photos/seed/p8/200/200", initials: "MJ" },
-  { name: "Prasert Kaewdee", role: "Welfare Officer", tenure: "2569", category: "Council", avatar: "https://picsum.photos/seed/p9/200/200", initials: "PK" },
-  { name: "Noi Srisuwan", role: "Science Dept Head", tenure: "2569", category: "Faculty", avatar: "https://picsum.photos/seed/p10/200/200", initials: "NS" },
-  { name: "Wichai Yodrak", role: "IT Support", tenure: "2569", category: "Administration", avatar: "https://picsum.photos/seed/p11/200/200", initials: "WY" },
-  { name: "Sunee Thongdee", role: "Former Vice President", tenure: "2569", category: "Past Members", avatar: "https://picsum.photos/seed/p12/200/200", initials: "ST" },
-  { name: "Ananda Everingham", role: "Arts Coordinator", tenure: "2569", category: "Council", avatar: "https://picsum.photos/seed/p13/200/200", initials: "AE" },
-  { name: "Chaiwat Siri", role: "Sports Rep", tenure: "2569", category: "Council", avatar: "https://picsum.photos/seed/p14/200/200", initials: "CS" },
-  { name: "Dao Ming", role: "International Liaison", tenure: "2569", category: "Council", avatar: "https://picsum.photos/seed/p15/200/200", initials: "DM" },
-  { name: "Ekachai Sae-low", role: "Mathematics Teacher", tenure: "2569", category: "Faculty", avatar: "https://picsum.photos/seed/p16/200/200", initials: "ES" },
-  { name: "Fon Thanasoonthorn", role: "Music Teacher", tenure: "2569", category: "Faculty", avatar: "https://picsum.photos/seed/p17/200/200", initials: "FT" },
-  { name: "Gong Yoo", role: "Library Assistant", tenure: "2569", category: "Administration", avatar: "https://picsum.photos/seed/p18/200/200", initials: "GY" },
-  { name: "Hathaithat Su", role: "Class Rep G12", tenure: "2569", category: "Council", avatar: "https://picsum.photos/seed/p19/200/200", initials: "HS" },
-  { name: "Itthipat Peeradech", role: "Class Rep G11", tenure: "2569", category: "Council", avatar: "https://picsum.photos/seed/p20/200/200", initials: "IP" },
-  { name: "Jirayu Tang", role: "Class Rep G10", tenure: "2569", category: "Council", avatar: "https://picsum.photos/seed/p21/200/200", initials: "JT" },
-  { name: "Krit Phrak", role: "Registrar", tenure: "2569", category: "Administration", avatar: "https://picsum.photos/seed/p22/200/200", initials: "KP" },
-  { name: "Lalisa Manoban", role: "Former Secretary", tenure: "2569", category: "Past Members", avatar: "https://picsum.photos/seed/p23/200/200", initials: "LM" },
-  { name: "Mario Maurer", role: "Drama Club Advisor", tenure: "2569", category: "Faculty", avatar: "https://picsum.photos/seed/p24/200/200", initials: "MM" },
-  { name: "Nadech Kugimiya", role: "Student Rights Officer", tenure: "2569", category: "Council", avatar: "https://picsum.photos/seed/p25/200/200", initials: "NK" },
-  { name: "Oranuch J", role: "Events Planner", tenure: "2569", category: "Council", avatar: "https://picsum.photos/seed/p26/200/200", initials: "OJ" },
-  { name: "Pancake Khemanit", role: "Volunteer Coordinator", tenure: "2569", category: "Council", avatar: "https://picsum.photos/seed/p27/200/200", initials: "PK" },
-  { name: "Quincy Jones", role: "English Teacher", tenure: "2569", category: "Faculty", avatar: "https://picsum.photos/seed/p28/200/200", initials: "QJ" },
-  { name: "Ratha Pho-ngam", role: "Dance Instructor", tenure: "2569", category: "Faculty", avatar: "https://picsum.photos/seed/p29/200/200", initials: "RP" },
-  { name: "Sunny Suwan", role: "Technician", tenure: "2569", category: "Administration", avatar: "https://picsum.photos/seed/p30/200/200", initials: "SS" },
-  { name: "Tik Jesdaporn", role: "Environment Officer", tenure: "2569", category: "Council", avatar: "https://picsum.photos/seed/p31/200/200", initials: "TJ" },
-  { name: "Urassaya Sperbund", role: "Media Specialist", tenure: "2569", category: "Council", avatar: "https://picsum.photos/seed/p32/200/200", initials: "US" },
-  { name: "Violette Wautier", role: "Audio Tech", tenure: "2569", category: "Council", avatar: "https://picsum.photos/seed/p33/200/200", initials: "VW" },
-  { name: "Win Metawin", role: "Logistics Manager", tenure: "2569", category: "Council", avatar: "https://picsum.photos/seed/p34/200/200", initials: "WM" },
-  { name: "Xavier Lim", role: "History Teacher", tenure: "2569", category: "Faculty", avatar: "https://picsum.photos/seed/p35/200/200", initials: "XL" },
-  { name: "Yaya Ying", role: "Former Treasurer", tenure: "2569", category: "Past Members", avatar: "https://picsum.photos/seed/p36/200/200", initials: "YY" },
-  { name: "Zoe Tan", role: "Administration Assistant", tenure: "2569", category: "Administration", avatar: "https://picsum.photos/seed/p37/200/200", initials: "ZT" },
-  { name: "Arak Amorn", role: "Music Director", tenure: "2569", category: "Faculty", avatar: "https://picsum.photos/seed/p38/200/200", initials: "AA" },
-  { name: "Bowie Pan", role: "Discipline Officer", tenure: "2569", category: "Council", avatar: "https://picsum.photos/seed/p39/200/200", initials: "BP" },
-  { name: "Celine Dion", role: "French Teacher", tenure: "2569", category: "Faculty", avatar: "https://picsum.photos/seed/p40/200/200", initials: "CD" },
-  { name: "Dew Nittha", role: "External Affairs", tenure: "2569", category: "Council", avatar: "https://picsum.photos/seed/p41/200/200", initials: "DN" },
-  { name: "Esther Supree", role: "Internal Auditor", tenure: "2569", category: "Council", avatar: "https://picsum.photos/seed/p42/200/200", initials: "ES" },
-  { name: "Film Thanapat", role: "Student Welfare", tenure: "2569", category: "Council", avatar: "https://picsum.photos/seed/p43/200/200", initials: "FT" },
-  { name: "Great Warintorn", role: "Sports Advisor", tenure: "2569", category: "Faculty", avatar: "https://picsum.photos/seed/p44/200/200", initials: "GW" },
-  { name: "Hunny Pot", role: "Cafeteria Liaison", tenure: "2569", category: "Council", avatar: "https://picsum.photos/seed/p45/200/200", initials: "HP" },
-  { name: "Inky Sky", role: "Newsletter Editor", tenure: "2569", category: "Council", avatar: "https://picsum.photos/seed/p46/200/200", initials: "IS" },
-  { name: "James Ma", role: "Photography Head", tenure: "2569", category: "Council", avatar: "https://picsum.photos/seed/p47/200/200", initials: "JM" },
-  { name: "Kao Jirayu", role: "Former PR", tenure: "2569", category: "Past Members", avatar: "https://picsum.photos/seed/p48/200/200", initials: "KJ" },
-  { name: "Lydia Sarun", role: "Vocal Coach", tenure: "2569", category: "Faculty", avatar: "https://picsum.photos/seed/p49/200/200", initials: "LS" },
-  { name: "Mint Chalida", role: "Health Officer", tenure: "2569", category: "Council", avatar: "https://picsum.photos/seed/p50/200/200", initials: "MC" },
-  { name: "New Thitipoom", role: "Web Developer", tenure: "2569", category: "Council", avatar: "https://picsum.photos/seed/p51/200/200", initials: "NT" },
-  { name: "Off Jumpol", role: "Video Producer", tenure: "2569", category: "Council", avatar: "https://picsum.photos/seed/p52/200/200", initials: "OJ" },
-  { name: "Pearwah Nicha", role: "Student Mentor", tenure: "2569", category: "Council", avatar: "https://picsum.photos/seed/p53/200/200", initials: "PN" },
-  { name: "Quin Wang", role: "Physics Teacher", tenure: "2569", category: "Faculty", avatar: "https://picsum.photos/seed/p54/200/200", initials: "QW" },
-  { name: "Ryu Vachir", role: "IT Consultant", tenure: "2569", category: "Administration", avatar: "https://picsum.photos/seed/p55/200/200", initials: "RV" }
+  { name: "Thanaphon Suksom", nickname: "Note", role: "Council President", tenure: "2569", category: "Council", avatar: "https://drive.google.com/uc?export=view&id=114UwCsa79_VdKHpaQSnnsfHfJ9KVcHoB", initials: "TS" },
+  { name: "Arisa Wongrat", nickname: "Mint", role: "Vice President", tenure: "2569", category: "Council", avatar: "https://picsum.photos/seed/p2/200/200", initials: "AW" },
+  { name: "Dr. Somchai Rakthai", nickname: "Chai", role: "Faculty Advisor", tenure: "2569", category: "Faculty", avatar: "https://picsum.photos/seed/p3/200/200", initials: "SR" },
+  { name: "Kanya Phetcha", nickname: "Kwan", role: "Secretary General", tenure: "2569", category: "Council", avatar: "https://picsum.photos/seed/p4/200/200", initials: "KP" },
+  { name: "Viroj Lim", nickname: "Vee", role: "Academic Affairs Administrator", tenure: "2569", category: "Administration", avatar: "https://picsum.photos/seed/p5/200/200", initials: "VL" },
+  { name: "Pichai Jaruek", nickname: "Ek", role: "Former President", tenure: "2569", category: "Past Members", avatar: "https://picsum.photos/seed/p6/200/200", initials: "PJ" },
+  { name: "Sompong Bunmee", nickname: "Pong", role: "Treasurer", tenure: "2569", category: "Council", avatar: "https://picsum.photos/seed/p7/200/200", initials: "SB" },
+  { name: "Malee Jaisa-ard", nickname: "Mali", role: "Public Relations", tenure: "2569", category: "Council", avatar: "https://picsum.photos/seed/p8/200/200", initials: "MJ" },
+  { name: "Prasert Kaewdee", nickname: "Sert", role: "Welfare Officer", tenure: "2569", category: "Council", avatar: "https://picsum.photos/seed/p9/200/200", initials: "PK" },
+  { name: "Noi Srisuwan", nickname: "Noi", role: "Science Dept Head", tenure: "2569", category: "Faculty", avatar: "https://picsum.photos/seed/p10/200/200", initials: "NS" },
+  { name: "Wichai Yodrak", nickname: "Win", role: "IT Support", tenure: "2569", category: "Administration", avatar: "https://picsum.photos/seed/p11/200/200", initials: "WY" },
+  { name: "Sunee Thongdee", nickname: "Nee", role: "Former Vice President", tenure: "2569", category: "Past Members", avatar: "https://picsum.photos/seed/p12/200/200", initials: "ST" },
+  { name: "Ananda Everingham", nickname: "Anda", role: "Arts Coordinator", tenure: "2569", category: "Council", avatar: "https://picsum.photos/seed/p13/200/200", initials: "AE" },
+  { name: "Chaiwat Siri", nickname: "Wat", role: "Sports Rep", tenure: "2569", category: "Council", avatar: "https://picsum.photos/seed/p14/200/200", initials: "CS" },
+  { name: "Dao Ming", nickname: "Dao", role: "International Liaison", tenure: "2569", category: "Council", avatar: "https://picsum.photos/seed/p15/200/200", initials: "DM" },
+  { name: "Ekachai Sae-low", nickname: "Ek", role: "Mathematics Teacher", tenure: "2569", category: "Faculty", avatar: "https://picsum.photos/seed/p16/200/200", initials: "ES" },
+  { name: "Fon Thanasoonthorn", nickname: "Fon", role: "Music Teacher", tenure: "2569", category: "Faculty", avatar: "https://picsum.photos/seed/p17/200/200", initials: "FT" },
+  { name: "Gong Yoo", nickname: "Gong", role: "Library Assistant", tenure: "2569", category: "Administration", avatar: "https://picsum.photos/seed/p18/200/200", initials: "GY" },
+  { name: "Hathaithat Su", nickname: "Tha", role: "Class Rep G12", tenure: "2569", category: "Council", avatar: "https://picsum.photos/seed/p19/200/200", initials: "HS" },
+  { name: "Itthipat Peeradech", nickname: "Tob", role: "Class Rep G11", tenure: "2569", category: "Council", avatar: "https://picsum.photos/seed/p20/200/200", initials: "IP" },
+  { name: "Jirayu Tang", nickname: "James", role: "Class Rep G10", tenure: "2569", category: "Council", avatar: "https://picsum.photos/seed/p21/200/200", initials: "JT" },
+  { name: "Krit Phrak", nickname: "Krit", role: "Registrar", tenure: "2569", category: "Administration", avatar: "https://picsum.photos/seed/p22/200/200", initials: "KP" },
+  { name: "Lalisa Manoban", nickname: "Lisa", role: "Former Secretary", tenure: "2569", category: "Past Members", avatar: "https://picsum.photos/seed/p23/200/200", initials: "LM" },
+  { name: "Mario Maurer", nickname: "Oh", role: "Drama Club Advisor", tenure: "2569", category: "Faculty", avatar: "https://picsum.photos/seed/p24/200/200", initials: "MM" },
+  { name: "Nadech Kugimiya", nickname: "Barry", role: "Student Rights Officer", tenure: "2569", category: "Council", avatar: "https://picsum.photos/seed/p25/200/200", initials: "NK" },
+  { name: "Oranuch J", nickname: "นุช", role: "Events Planner", tenure: "2569", category: "Council", avatar: "https://picsum.photos/seed/p26/200/200", initials: "OJ" },
+  { name: "Pancake Khemanit", nickname: "Pan", role: "Volunteer Coordinator", tenure: "2569", category: "Council", avatar: "https://picsum.photos/seed/p27/200/200", initials: "PK" },
+  { name: "Quincy Jones", nickname: "Q", role: "English Teacher", tenure: "2569", category: "Faculty", avatar: "https://picsum.photos/seed/p28/200/200", initials: "QJ" },
+  { name: "Ratha Pho-ngam", nickname: "Ying", role: "Dance Instructor", tenure: "2569", category: "Faculty", avatar: "https://picsum.photos/seed/p29/200/200", initials: "RP" },
+  { name: "Sunny Suwan", nickname: "Sunny", role: "Technician", tenure: "2569", category: "Administration", avatar: "https://picsum.photos/seed/p30/200/200", initials: "SS" },
+  { name: "Tik Jesdaporn", nickname: "Tik", role: "Environment Officer", tenure: "2569", category: "Council", avatar: "https://picsum.photos/seed/p31/200/200", initials: "TJ" },
+  { name: "Urassaya Sperbund", nickname: "Yaya", role: "Media Specialist", tenure: "2569", category: "Council", avatar: "https://picsum.photos/seed/p32/200/200", initials: "US" },
+  { name: "Violette Wautier", nickname: "V", role: "Audio Tech", tenure: "2569", category: "Council", avatar: "https://picsum.photos/seed/p33/200/200", initials: "VW" },
+  { name: "Win Metawin", nickname: "Win", role: "Logistics Manager", tenure: "2569", category: "Council", avatar: "https://picsum.photos/seed/p34/200/200", initials: "WM" },
+  { name: "Xavier Lim", nickname: "X", role: "History Teacher", tenure: "2569", category: "Faculty", avatar: "https://picsum.photos/seed/p35/200/200", initials: "XL" },
+  { name: "Yaya Ying", nickname: "Ying", role: "Former Treasurer", tenure: "2569", category: "Past Members", avatar: "https://picsum.photos/seed/p36/200/200", initials: "YY" },
+  { name: "Zoe Tan", nickname: "Zoe", role: "Administration Assistant", tenure: "2569", category: "Administration", avatar: "https://picsum.photos/seed/p37/200/200", initials: "ZT" },
+  { name: "Arak Amorn", nickname: "Pae", role: "Music Director", tenure: "2569", category: "Faculty", avatar: "https://picsum.photos/seed/p38/200/200", initials: "AA" },
+  { name: "Bowie Pan", nickname: "Bo", role: "Discipline Officer", tenure: "2569", category: "Council", avatar: "https://picsum.photos/seed/p39/200/200", initials: "BP" },
+  { name: "Celine Dion", nickname: "Cel", role: "French Teacher", tenure: "2569", category: "Faculty", avatar: "https://picsum.photos/seed/p40/200/200", initials: "CD" },
+  { name: "Dew Nittha", nickname: "Mew", role: "External Affairs", tenure: "2569", category: "Council", avatar: "https://picsum.photos/seed/p41/200/200", initials: "DN" },
+  { name: "Esther Supree", nickname: "Est", role: "Internal Auditor", tenure: "2569", category: "Council", avatar: "https://picsum.photos/seed/p42/200/200", initials: "ES" },
+  { name: "Film Thanapat", nickname: "Film", role: "Student Welfare", tenure: "2569", category: "Council", avatar: "https://picsum.photos/seed/p43/200/200", initials: "FT" },
+  { name: "Great Warintorn", nickname: "Great", role: "Sports Advisor", tenure: "2569", category: "Faculty", avatar: "https://picsum.photos/seed/p44/200/200", initials: "GW" },
+  { name: "Hunny Pot", nickname: "Hun", role: "Cafeteria Liaison", tenure: "2569", category: "Council", avatar: "https://picsum.photos/seed/p45/200/200", initials: "HP" },
+  { name: "Inky Sky", nickname: "Ink", role: "Newsletter Editor", tenure: "2569", category: "Council", avatar: "https://picsum.photos/seed/p46/200/200", initials: "IS" },
+  { name: "James Ma", nickname: "James", role: "Photography Head", tenure: "2569", category: "Council", avatar: "https://picsum.photos/seed/p47/200/200", initials: "JM" },
+  { name: "Kao Jirayu", nickname: "Kao", role: "Former PR", tenure: "2569", category: "Past Members", avatar: "https://picsum.photos/seed/p48/200/200", initials: "KJ" },
+  { name: "Lydia Sarun", nickname: "Lydia", role: "Vocal Coach", tenure: "2569", category: "Faculty", avatar: "https://picsum.photos/seed/p49/200/200", initials: "LS" },
+  { name: "Mint Chalida", nickname: "Mint", role: "Health Officer", tenure: "2569", category: "Council", avatar: "https://picsum.photos/seed/p50/200/200", initials: "MC" },
+  { name: "New Thitipoom", nickname: "New", role: "Web Developer", tenure: "2569", category: "Council", avatar: "https://picsum.photos/seed/p51/200/200", initials: "NT" },
+  { name: "Off Jumpol", nickname: "Off", role: "Video Producer", tenure: "2569", category: "Council", avatar: "https://picsum.photos/seed/p52/200/200", initials: "OJ" },
+  { name: "Pearwah Nicha", nickname: "Pear", role: "Student Mentor", tenure: "2569", category: "Council", avatar: "https://picsum.photos/seed/p53/200/200", initials: "PN" },
+  { name: "Quin Wang", nickname: "Q", role: "Physics Teacher", tenure: "2569", category: "Faculty", avatar: "https://picsum.photos/seed/p54/200/200", initials: "QW" },
+  { name: "Ryu Vachir", nickname: "Ryu", role: "IT Consultant", tenure: "2569", category: "Administration", avatar: "https://picsum.photos/seed/p55/200/200", initials: "RV" }
 ]
 
 export default function RegistryPage() {
@@ -76,7 +76,8 @@ export default function RegistryPage() {
 
   const filtered = personnel.filter(p => {
     const matchesSearch = p.name.toLowerCase().includes(search.toLowerCase()) || 
-                          p.role.toLowerCase().includes(search.toLowerCase())
+                          p.role.toLowerCase().includes(search.toLowerCase()) ||
+                          p.nickname.toLowerCase().includes(search.toLowerCase())
     const matchesTab = activeTab === "all" || p.category.toLowerCase() === activeTab.toLowerCase() || (activeTab === "past" && p.category === "Past Members")
     return matchesSearch && matchesTab
   })
@@ -139,7 +140,7 @@ export default function RegistryPage() {
 
                 <div>
                   <h3 className="text-lg font-bold text-primary group-hover:text-accent transition-colors leading-tight mb-1.5">
-                    {person.name}
+                    {person.name} ({person.nickname})
                   </h3>
                   <div className="flex items-center gap-2 text-xs font-semibold text-foreground/70">
                     {person.category === 'Council' ? (
