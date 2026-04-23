@@ -5,18 +5,17 @@ import { useState } from "react"
 import { Input } from "@/components/ui/input"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Search, Users, Shield, GraduationCap, User } from "lucide-react"
+import { Search, Users, Shield, User } from "lucide-react"
 import Image from "next/image"
 import { PlaceHolderImages } from "@/lib/placeholder-images"
 
 const personnel = [
   { 
-    name: "Natthaporn Krueawan", 
-    thaiName: "ณัฐพร เคลือวัลย์", 
-    nickname: "Ging Gao (กิ่งเก้า)", 
+    name: "Thanaphon Suksom", 
+    thaiName: "ธนภณ สุขสม", 
+    nickname: "Note (โน้ต)", 
     role: "ประธานสภานักเรียน", 
     tenure: "2569", 
-    category: "Council", 
     avatar: "https://drive.google.com/uc?export=view&id=114UwCsa79_VdKHpaQSnnsfHfJ9KVcHoB"
   },
   { 
@@ -25,7 +24,6 @@ const personnel = [
     nickname: "Solar (โซล่า)", 
     role: "หัวหน้าฝ่ายเทคโนโลยีและโสตทัศนศึกษา", 
     tenure: "2569", 
-    category: "Council", 
     avatar: "https://picsum.photos/seed/p2/200/200" 
   },
   { 
@@ -34,7 +32,6 @@ const personnel = [
     nickname: "Chai (ชัย)", 
     role: "Faculty Advisor", 
     tenure: "2569", 
-    category: "Faculty", 
     avatar: "https://picsum.photos/seed/p3/200/200" 
   },
   { 
@@ -43,7 +40,6 @@ const personnel = [
     nickname: "Kwan (ขวัญ)", 
     role: "Secretary General", 
     tenure: "2569", 
-    category: "Council", 
     avatar: "https://picsum.photos/seed/p4/200/200" 
   },
   { 
@@ -52,7 +48,6 @@ const personnel = [
     nickname: "Vee (วี)", 
     role: "Academic Affairs", 
     tenure: "2569", 
-    category: "Administration", 
     avatar: "https://picsum.photos/seed/p5/200/200" 
   },
   { 
@@ -61,7 +56,6 @@ const personnel = [
     nickname: "Ek (เอก)", 
     role: "Former President", 
     tenure: "2569", 
-    category: "Past Members", 
     avatar: "https://picsum.photos/seed/p6/200/200" 
   },
   { 
@@ -70,7 +64,6 @@ const personnel = [
     nickname: "Pong (พงษ์)", 
     role: "Treasurer", 
     tenure: "2569", 
-    category: "Council", 
     avatar: "https://picsum.photos/seed/p7/200/200" 
   },
   { 
@@ -79,7 +72,6 @@ const personnel = [
     nickname: "Mali (มะลิ)", 
     role: "Public Relations", 
     tenure: "2569", 
-    category: "Council", 
     avatar: "https://picsum.photos/seed/p8/200/200" 
   },
   { 
@@ -88,7 +80,6 @@ const personnel = [
     nickname: "Sert (เสริฐ)", 
     role: "Welfare Officer", 
     tenure: "2569", 
-    category: "Council", 
     avatar: "https://picsum.photos/seed/p9/200/200" 
   },
   { 
@@ -97,7 +88,6 @@ const personnel = [
     nickname: "Noi (น้อย)", 
     role: "Science Dept Head", 
     tenure: "2569", 
-    category: "Faculty", 
     avatar: "https://picsum.photos/seed/p10/200/200" 
   },
   { 
@@ -106,7 +96,6 @@ const personnel = [
     nickname: "Win (วิน)", 
     role: "IT Support", 
     tenure: "2569", 
-    category: "Administration", 
     avatar: "https://picsum.photos/seed/p11/200/200" 
   },
   { 
@@ -115,7 +104,6 @@ const personnel = [
     nickname: "Nee (นี)", 
     role: "Former Vice President", 
     tenure: "2569", 
-    category: "Past Members", 
     avatar: "https://picsum.photos/seed/p12/200/200" 
   },
   { 
@@ -124,7 +112,6 @@ const personnel = [
     nickname: "Anda (อนันดา)", 
     role: "Arts Coordinator", 
     tenure: "2569", 
-    category: "Council", 
     avatar: "https://picsum.photos/seed/p13/200/200" 
   },
   { 
@@ -133,7 +120,6 @@ const personnel = [
     nickname: "Wat (วัฒน์)", 
     role: "Sports Rep", 
     tenure: "2569", 
-    category: "Council", 
     avatar: "https://picsum.photos/seed/p14/200/200" 
   },
   { 
@@ -142,7 +128,6 @@ const personnel = [
     nickname: "Dao (ดาว)", 
     role: "International Liaison", 
     tenure: "2569", 
-    category: "Council", 
     avatar: "https://picsum.photos/seed/p15/200/200" 
   },
   { 
@@ -151,7 +136,6 @@ const personnel = [
     nickname: "Ek (เอก)", 
     role: "Math Teacher", 
     tenure: "2569", 
-    category: "Faculty", 
     avatar: "https://picsum.photos/seed/p16/200/200" 
   },
   { 
@@ -160,7 +144,6 @@ const personnel = [
     nickname: "Fon (ฝน)", 
     role: "Music Teacher", 
     tenure: "2569", 
-    category: "Faculty", 
     avatar: "https://picsum.photos/seed/p17/200/200" 
   },
   { 
@@ -169,7 +152,6 @@ const personnel = [
     nickname: "Gong (กง)", 
     role: "Library Assistant", 
     tenure: "2569", 
-    category: "Administration", 
     avatar: "https://picsum.photos/seed/p18/200/200" 
   },
   { 
@@ -178,7 +160,6 @@ const personnel = [
     nickname: "Tha (ทา)", 
     role: "Class Rep G12", 
     tenure: "2569", 
-    category: "Council", 
     avatar: "https://picsum.photos/seed/p19/200/200" 
   },
   { 
@@ -187,7 +168,6 @@ const personnel = [
     nickname: "Tob (ต๊อบ)", 
     role: "Class Rep G11", 
     tenure: "2569", 
-    category: "Council", 
     avatar: "https://picsum.photos/seed/p20/200/200" 
   },
   { 
@@ -196,7 +176,6 @@ const personnel = [
     nickname: "James (เจมส์)", 
     role: "Class Rep G10", 
     tenure: "2569", 
-    category: "Council", 
     avatar: "https://picsum.photos/seed/p21/200/200" 
   },
   { 
@@ -205,7 +184,6 @@ const personnel = [
     nickname: "Krit (กฤษฎ์)", 
     role: "Registrar", 
     tenure: "2569", 
-    category: "Administration", 
     avatar: "https://picsum.photos/seed/p22/200/200" 
   },
   { 
@@ -214,7 +192,6 @@ const personnel = [
     nickname: "Lisa (ลิซ่า)", 
     role: "Former Secretary", 
     tenure: "2569", 
-    category: "Past Members", 
     avatar: "https://picsum.photos/seed/p23/200/200" 
   },
   { 
@@ -223,7 +200,6 @@ const personnel = [
     nickname: "Oh (โอ้)", 
     role: "Drama Club Advisor", 
     tenure: "2569", 
-    category: "Faculty", 
     avatar: "https://picsum.photos/seed/p24/200/200" 
   },
   { 
@@ -232,7 +208,6 @@ const personnel = [
     nickname: "Barry (แบร์รี่)", 
     role: "Student Rights Officer", 
     tenure: "2569", 
-    category: "Council", 
     avatar: "https://picsum.photos/seed/p25/200/200" 
   },
   { 
@@ -241,7 +216,6 @@ const personnel = [
     nickname: "Nuch (นุช)", 
     role: "Events Planner", 
     tenure: "2569", 
-    category: "Council", 
     avatar: "https://picsum.photos/seed/p26/200/200" 
   },
   { 
@@ -250,7 +224,6 @@ const personnel = [
     nickname: "Pan (แพน)", 
     role: "Volunteer Coordinator", 
     tenure: "2569", 
-    category: "Council", 
     avatar: "https://picsum.photos/seed/p27/200/200" 
   },
   { 
@@ -259,7 +232,6 @@ const personnel = [
     nickname: "Q (คิว)", 
     role: "English Teacher", 
     tenure: "2569", 
-    category: "Faculty", 
     avatar: "https://picsum.photos/seed/p28/200/200" 
   },
   { 
@@ -268,7 +240,6 @@ const personnel = [
     nickname: "Ying (หญิง)", 
     role: "Dance Instructor", 
     tenure: "2569", 
-    category: "Faculty", 
     avatar: "https://picsum.photos/seed/p29/200/200" 
   },
   { 
@@ -277,7 +248,6 @@ const personnel = [
     nickname: "Sunny (ซันนี่)", 
     role: "Technician", 
     tenure: "2569", 
-    category: "Administration", 
     avatar: "https://picsum.photos/seed/p30/200/200" 
   },
   { 
@@ -286,7 +256,6 @@ const personnel = [
     nickname: "Tik (ติ๊ก)", 
     role: "Environment Officer", 
     tenure: "2569", 
-    category: "Council", 
     avatar: "https://picsum.photos/seed/p31/200/200" 
   },
   { 
@@ -295,7 +264,6 @@ const personnel = [
     nickname: "Yaya (ญาญ่า)", 
     role: "Media Specialist", 
     tenure: "2569", 
-    category: "Council", 
     avatar: "https://picsum.photos/seed/p32/200/200" 
   },
   { 
@@ -304,7 +272,6 @@ const personnel = [
     nickname: "V (วี)", 
     role: "Audio Tech", 
     tenure: "2569", 
-    category: "Council", 
     avatar: "https://picsum.photos/seed/p33/200/200" 
   },
   { 
@@ -313,7 +280,6 @@ const personnel = [
     nickname: "Win (วิน)", 
     role: "Logistics Manager", 
     tenure: "2569", 
-    category: "Council", 
     avatar: "https://picsum.photos/seed/p34/200/200" 
   },
   { 
@@ -322,7 +288,6 @@ const personnel = [
     nickname: "X (เอ็กซ์)", 
     role: "History Teacher", 
     tenure: "2569", 
-    category: "Faculty", 
     avatar: "https://picsum.photos/seed/p35/200/200" 
   },
   { 
@@ -331,7 +296,6 @@ const personnel = [
     nickname: "Ying (หญิง)", 
     role: "Former Treasurer", 
     tenure: "2569", 
-    category: "Past Members", 
     avatar: "https://picsum.photos/seed/p36/200/200" 
   },
   { 
@@ -340,7 +304,6 @@ const personnel = [
     nickname: "Zoe (โซอี้)", 
     role: "Admin Assistant", 
     tenure: "2569", 
-    category: "Administration", 
     avatar: "https://picsum.photos/seed/p37/200/200" 
   },
   { 
@@ -349,7 +312,6 @@ const personnel = [
     nickname: "Pae (เป้)", 
     role: "Music Director", 
     tenure: "2569", 
-    category: "Faculty", 
     avatar: "https://picsum.photos/seed/p38/200/200" 
   },
   { 
@@ -358,7 +320,6 @@ const personnel = [
     nickname: "Bo (โบว์)", 
     role: "Discipline Officer", 
     tenure: "2569", 
-    category: "Council", 
     avatar: "https://picsum.photos/seed/p39/200/200" 
   },
   { 
@@ -367,7 +328,6 @@ const personnel = [
     nickname: "Cel (เซล)", 
     role: "French Teacher", 
     tenure: "2569", 
-    category: "Faculty", 
     avatar: "https://picsum.photos/seed/p40/200/200" 
   },
   { 
@@ -376,7 +336,6 @@ const personnel = [
     nickname: "Mew (มิว)", 
     role: "External Affairs", 
     tenure: "2569", 
-    category: "Council", 
     avatar: "https://picsum.photos/seed/p41/200/200" 
   },
   { 
@@ -385,7 +344,6 @@ const personnel = [
     nickname: "Est (เอส)", 
     role: "Internal Auditor", 
     tenure: "2569", 
-    category: "Council", 
     avatar: "https://picsum.photos/seed/p42/200/200" 
   },
   { 
@@ -394,7 +352,6 @@ const personnel = [
     nickname: "Film (ฟิล์ม)", 
     role: "Student Welfare", 
     tenure: "2569", 
-    category: "Council", 
     avatar: "https://picsum.photos/seed/p43/200/200" 
   },
   { 
@@ -403,7 +360,6 @@ const personnel = [
     nickname: "Great (เกรท)", 
     role: "Sports Advisor", 
     tenure: "2569", 
-    category: "Faculty", 
     avatar: "https://picsum.photos/seed/p44/200/200" 
   },
   { 
@@ -412,7 +368,6 @@ const personnel = [
     nickname: "Hun (ฮัน)", 
     role: "Cafeteria Liaison", 
     tenure: "2569", 
-    category: "Council", 
     avatar: "https://picsum.photos/seed/p45/200/200" 
   },
   { 
@@ -421,7 +376,6 @@ const personnel = [
     nickname: "Ink (อิงค์)", 
     role: "Newsletter Editor", 
     tenure: "2569", 
-    category: "Council", 
     avatar: "https://picsum.photos/seed/p46/200/200" 
   },
   { 
@@ -430,7 +384,6 @@ const personnel = [
     nickname: "James (เจมส์)", 
     role: "Photography Head", 
     tenure: "2569", 
-    category: "Council", 
     avatar: "https://picsum.photos/seed/p47/200/200" 
   },
   { 
@@ -439,7 +392,6 @@ const personnel = [
     nickname: "Kao (เก้า)", 
     role: "Former PR", 
     tenure: "2569", 
-    category: "Past Members", 
     avatar: "https://picsum.photos/seed/p48/200/200" 
   },
   { 
@@ -448,7 +400,6 @@ const personnel = [
     nickname: "Lydia (ลิเดีย)", 
     role: "Vocal Coach", 
     tenure: "2569", 
-    category: "Faculty", 
     avatar: "https://picsum.photos/seed/p49/200/200" 
   },
   { 
@@ -457,7 +408,6 @@ const personnel = [
     nickname: "Mint (มิ้นต์)", 
     role: "Health Officer", 
     tenure: "2569", 
-    category: "Council", 
     avatar: "https://picsum.photos/seed/p50/200/200" 
   },
   { 
@@ -466,7 +416,6 @@ const personnel = [
     nickname: "New (นิว)", 
     role: "Web Developer", 
     tenure: "2569", 
-    category: "Council", 
     avatar: "https://picsum.photos/seed/p51/200/200" 
   },
   { 
@@ -475,7 +424,6 @@ const personnel = [
     nickname: "Off (ออฟ)", 
     role: "Video Producer", 
     tenure: "2569", 
-    category: "Council", 
     avatar: "https://picsum.photos/seed/p52/200/200" 
   },
   { 
@@ -484,7 +432,6 @@ const personnel = [
     nickname: "Pear (แพร)", 
     role: "Student Mentor", 
     tenure: "2569", 
-    category: "Council", 
     avatar: "https://picsum.photos/seed/p53/200/200" 
   },
   { 
@@ -493,7 +440,6 @@ const personnel = [
     nickname: "Q (คิว)", 
     role: "Physics Teacher", 
     tenure: "2569", 
-    category: "Faculty", 
     avatar: "https://picsum.photos/seed/p54/200/200" 
   },
   { 
@@ -502,7 +448,6 @@ const personnel = [
     nickname: "Ryu (ริว)", 
     role: "IT Consultant", 
     tenure: "2569", 
-    category: "Administration", 
     avatar: "https://picsum.photos/seed/p55/200/200" 
   }
 ]
@@ -576,11 +521,7 @@ export default function RegistryPage() {
                   </p>
                   
                   <div className="flex items-center gap-2 text-xs font-semibold text-foreground/70 pt-2 border-t border-border/30 mt-2">
-                    {person.category === 'Council' ? (
-                      <Shield className="h-3.5 w-3.5 text-accent shrink-0" />
-                    ) : (
-                      <GraduationCap className="h-3.5 w-3.5 text-accent shrink-0" />
-                    )}
+                    <Shield className="h-3.5 w-3.5 text-accent shrink-0" />
                     <span className="truncate">{person.role}</span>
                   </div>
                 </div>
