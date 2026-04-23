@@ -15,7 +15,7 @@ const personnel = [
   { 
     name: "Dr. Prasert Wattana", 
     thaiName: "ดร.ประเสริฐ วัฒนา", 
-    nickname: "Sert (เสริฐ)", 
+    nickname: "เสริฐ (Sert)", 
     role: "ผู้อำนวยการโรงเรียน", 
     category: "คณะผู้บริหารโรงเรียน",
     tenure: "2569", 
@@ -24,7 +24,7 @@ const personnel = [
   { 
     name: "Mrs. Malee Srisuwan", 
     thaiName: "นางมาลี ศรีสุวรรณ", 
-    nickname: "Mali (มะลิ)", 
+    nickname: "มะลิ (Mali)", 
     role: "รองผู้อำนวยการฝ่ายบริหาร", 
     category: "คณะผู้บริหารโรงเรียน",
     tenure: "2569", 
@@ -33,7 +33,7 @@ const personnel = [
   { 
     name: "Mr. Somchai Rakthai", 
     thaiName: "นายสมชาย รักไทย", 
-    nickname: "Chai (ชัย)", 
+    nickname: "ชัย (Chai)", 
     role: "รองผู้อำนวยการฝ่ายวิชาการ", 
     category: "คณะผู้บริหารโรงเรียน",
     tenure: "2569", 
@@ -42,7 +42,7 @@ const personnel = [
   { 
     name: "Ms. Kanya Phetcha", 
     thaiName: "นางสาวกัญญา เพชรฉ่ำ", 
-    nickname: "Kwan (ขวัญ)", 
+    nickname: "ขวัญ (Kwan)", 
     role: "รองผู้อำนวยการฝ่ายกิจกรรม", 
     category: "คณะผู้บริหารโรงเรียน",
     tenure: "2569", 
@@ -53,7 +53,7 @@ const personnel = [
   { 
     name: "Mrs. Noi Jaisa-ard", 
     thaiName: "นางน้อย ใจสะอาด", 
-    nickname: "Noi (น้อย)", 
+    nickname: "น้อย (Noi)", 
     role: "ครูที่ปรึกษาสภานักเรียนหลัก", 
     category: "คุณครูที่ปรึกษา",
     tenure: "2569", 
@@ -62,7 +62,7 @@ const personnel = [
   { 
     name: "Mr. Viroj Lim", 
     thaiName: "นายวิโรจน์ ลิ้ม", 
-    nickname: "Vee (วี)", 
+    nickname: "วี (Vee)", 
     role: "ครูที่ปรึกษาฝ่ายส่งเสริมประชาธิปไตย", 
     category: "คุณครูที่ปรึกษา",
     tenure: "2569", 
@@ -71,9 +71,9 @@ const personnel = [
 
   // สภานักเรียน (55 members)
   { 
-    name: "Thanaphon Suksom", 
-    thaiName: "ธนภณ สุขสม", 
-    nickname: "Note (โน้ต)", 
+    name: "Natthapron Kruewan", 
+    thaiName: "ณัฐพร เครือวัลย์", 
+    nickname: "กิ่งเก้า (Ging gao)", 
     role: "ประธานสภานักเรียน", 
     category: "สภานักเรียน",
     tenure: "2569", 
@@ -90,11 +90,13 @@ const personnel = [
     const lastNames = ["Chuadoem", "Kaewdee", "Sukdee", "Prom", "Rak", "Manee", "Wattana", "Kaew", "Sai", "Petch"];
     const nicknames = ["Solar", "Arm", "Ball", "Cake", "Dew", "Eve", "Fern", "Golf", "Heng", "Ice"];
     const nicknamesThai = ["โซล่า", "อาร์ม", "บอล", "เค้ก", "ดิว", "อีฟ", "เฟิร์น", "กอล์ฟ", "เฮง", "ไอซ์"];
+    const firstNamesThai = ["ธีรนพ", "อนันต์", "บุญ", "ดวง", "เอราวัณ", "ฟ้า", "ไก่", "หาญ", "อิทธิ", "จตุพร"];
+    const lastNamesThai = ["ช่วยเดิม", "แก้วดี", "สุขดี", "พรหม", "รัก", "มณี", "วัฒนา", "แก้ว", "สาย", "เพชร"];
     
     return {
       name: `${firstNames[i % 10]} ${lastNames[(i + 3) % 10]}`,
-      thaiName: `นาย/นางสาว ${firstNames[i % 10]} นามสมมติ`,
-      nickname: `${nicknames[i % 10]} (${nicknamesThai[i % 10]})`,
+      thaiName: `${firstNamesThai[i % 10]} ${lastNamesThai[(i + 3) % 10]}`,
+      nickname: `${nicknamesThai[i % 10]} (${nicknames[i % 10]})`,
       role: roles[i % roles.length],
       category: "สภานักเรียน",
       tenure: "2569",
