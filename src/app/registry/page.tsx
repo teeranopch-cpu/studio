@@ -6,12 +6,12 @@ import { Input } from "@/components/ui/input"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { Search, Users, Shield, GraduationCap } from "lucide-react"
+import { Search, Users, Shield, GraduationCap, User } from "lucide-react"
 import Image from "next/image"
 import { PlaceHolderImages } from "@/lib/placeholder-images"
 
 const personnel = [
-  { name: "Thanaphon Suksom", nickname: "Note", role: "Council President", tenure: "2569", category: "Council", avatar: "https://drive.google.com/uc?export=view&id=114UwCsa79_VdKHpaQSnnsfHfJ9KVcHoB", initials: "TS" },
+  { name: "Natthaporn Krueawan (ณัฐพร เคลือวัลย์)", nickname: "Ging Gao(กิ่งเก้า)", role: "Council President", tenure: "2569", category: "Council", avatar: "https://drive.google.com/uc?export=view&id=114UwCsa79_VdKHpaQSnnsfHfJ9KVcHoB", initials: "TS" },
   { name: "Arisa Wongrat", nickname: "Mint", role: "Vice President", tenure: "2569", category: "Council", avatar: "https://picsum.photos/seed/p2/200/200", initials: "AW" },
   { name: "Dr. Somchai Rakthai", nickname: "Chai", role: "Faculty Advisor", tenure: "2569", category: "Faculty", avatar: "https://picsum.photos/seed/p3/200/200", initials: "SR" },
   { name: "Kanya Phetcha", nickname: "Kwan", role: "Secretary General", tenure: "2569", category: "Council", avatar: "https://picsum.photos/seed/p4/200/200", initials: "KP" },
@@ -138,11 +138,15 @@ export default function RegistryPage() {
                   />
                 </div>
 
-                <div>
-                  <h3 className="text-lg font-bold text-primary group-hover:text-accent transition-colors leading-tight mb-1.5">
-                    {person.name} ({person.nickname})
+                <div className="space-y-1">
+                  <h3 className="text-lg font-bold text-primary group-hover:text-accent transition-colors leading-tight">
+                    {person.name}
                   </h3>
-                  <div className="flex items-center gap-2 text-xs font-semibold text-foreground/70">
+                  <p className="text-sm font-medium text-muted-foreground italic flex items-center gap-1.5">
+                    <User className="h-3 w-3" />
+                    "{person.nickname}"
+                  </p>
+                  <div className="flex items-center gap-2 text-xs font-semibold text-foreground/70 pt-2">
                     {person.category === 'Council' ? (
                       <Shield className="h-3.5 w-3.5 text-accent shrink-0" />
                     ) : (
