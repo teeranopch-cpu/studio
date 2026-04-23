@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Users, Facebook, Phone } from "lucide-react"
+import { ArrowRight, Users, Facebook, Phone, Scale } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
 import { PlaceHolderImages } from "@/lib/placeholder-images"
@@ -32,9 +32,9 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="container mx-auto px-6 -mt-12 mb-16 max-w-4xl">
-        <div className="flex justify-center">
-          <Card className="shadow-xl border-none bg-white/80 backdrop-blur-sm group hover:translate-y-[-4px] transition-all max-w-md w-full">
+      <div className="container mx-auto px-6 -mt-12 mb-16 max-w-5xl">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <Card className="shadow-xl border-none bg-white/80 backdrop-blur-sm group hover:translate-y-[-4px] transition-all w-full">
             <CardHeader>
               <div className="h-12 w-12 rounded-xl bg-teal-100 flex items-center justify-center text-accent mb-4 group-hover:scale-110 transition-transform">
                 <Users className="h-6 w-6" />
@@ -46,6 +46,22 @@ export default function Home() {
               <p className="text-sm text-muted-foreground mb-4">เข้าชมรายชื่อคณะกรรมการสภานักเรียนปัจจุบัน และครูที่ปรึกษา</p>
               <Button variant="link" className="p-0 text-accent font-bold group-hover:translate-x-1 transition-transform" asChild>
                 <Link href="/registry">View Directory <ArrowRight className="ml-1 h-3 w-3" /></Link>
+              </Button>
+            </CardContent>
+          </Card>
+
+          <Card className="shadow-xl border-none bg-white/80 backdrop-blur-sm group hover:translate-y-[-4px] transition-all w-full">
+            <CardHeader>
+              <div className="h-12 w-12 rounded-xl bg-blue-100 flex items-center justify-center text-primary mb-4 group-hover:scale-110 transition-transform">
+                <Scale className="h-6 w-6" />
+              </div>
+              <CardTitle className="text-xl font-bold">บทบาทหน้าที่</CardTitle>
+              <CardDescription>ศูนย์ส่งเสริมประชาธิปไตย</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <p className="text-sm text-muted-foreground mb-4">เรียนรู้เกี่ยวกับบทบาท หน้าที่ และความรับผิดชอบของสภานักเรียน</p>
+              <Button variant="link" className="p-0 text-primary font-bold group-hover:translate-x-1 transition-transform" asChild>
+                <Link href="/roles">Learn More <ArrowRight className="ml-1 h-3 w-3" /></Link>
               </Button>
             </CardContent>
           </Card>
@@ -80,7 +96,7 @@ export default function Home() {
                 href="tel:044561243" 
                 className="text-base font-bold text-primary hover:text-accent transition-colors"
               >
-                66+
+                044-561243
               </a>
             </div>
           </div>
