@@ -1,9 +1,9 @@
+
 "use client"
 
 import { useState } from "react"
 import { Input } from "@/components/ui/input"
 import { Card, CardContent } from "@/components/ui/card"
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Badge } from "@/components/ui/badge"
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Search, Users, Shield, GraduationCap } from "lucide-react"
@@ -111,33 +111,53 @@ export default function RegistryPage() {
         </TabsList>
       </Tabs>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {filtered.map((person, idx) => (
-          <Card key={idx} className="overflow-hidden border-none shadow-md hover:shadow-xl transition-all group">
-            <CardContent className="p-0">
-              <div className="h-24 relative overflow-hidden">
+          <Card key={idx} className="overflow-hidden border-none shadow-lg hover:shadow-2xl transition-all group flex flex-col h-full bg-white">
+            <CardContent className="p-0 flex flex-col h-full">
+              {/* Vertical Rectangular Profile Area */}
+              <div className="relative aspect-[3/4] w-full overflow-hidden bg-muted">
                 <Image 
-                  src={personnelBg?.imageUrl || "https://picsum.photos/seed/regbg/800/200"} 
-                  alt="Background" 
+                  src={person.avatar} 
+                  alt={person.name} 
                   fill 
-                  className="object-cover opacity-80 group-hover:opacity-100 transition-opacity"
-                  data-ai-hint="council background"
+                  className="object-cover group-hover:scale-105 transition-transform duration-700"
                 />
               </div>
-              <div className="px-6 pb-6 -mt-12 relative z-10">
-                <Avatar className="h-24 w-24 border-4 border-white shadow-lg mb-4">
-                  <AvatarImage src={person.avatar} />
-                  <AvatarFallback className="bg-primary text-white text-2xl">{person.initials}</AvatarFallback>
-                </Avatar>
-                <div className="space-y-1">
-                  <h3 className="text-xl font-bold text-primary group-hover:text-accent transition-colors">{person.name}</h3>
-                  <p className="text-sm font-semibold text-foreground/80 flex items-center gap-2">
-                    {person.category === 'Council' ? <Shield className="h-3 w-3" /> : <GraduationCap className="h-3 w-3" />}
-                    {person.role}
-                  </p>
-                  <Badge variant="secondary" className="mt-2 bg-secondary/30 text-secondary-foreground border-none">
-                    {person.tenure}
+              
+              {/* Personnel Details Section with School BG */}
+              <div className="relative flex-1 p-5 flex flex-col justify-between overflow-hidden">
+                {/* School Logo Background Accent */}
+                <div className="absolute inset-0 opacity-[0.03] pointer-events-none -z-10 scale-150 rotate-12">
+                  <Image 
+                    src={personnelBg?.imageUrl || ""} 
+                    alt="" 
+                    fill 
+                    className="object-contain"
+                  />
+                </div>
+
+                <div>
+                  <h3 className="text-lg font-bold text-primary group-hover:text-accent transition-colors leading-tight mb-1.5">
+                    {person.name}
+                  </h3>
+                  <div className="flex items-center gap-2 text-xs font-semibold text-foreground/70">
+                    {person.category === 'Council' ? (
+                      <Shield className="h-3.5 w-3.5 text-accent shrink-0" />
+                    ) : (
+                      <GraduationCap className="h-3.5 w-3.5 text-accent shrink-0" />
+                    )}
+                    <span className="truncate">{person.role}</span>
+                  </div>
+                </div>
+
+                <div className="mt-4 pt-4 border-t border-border/50 flex items-center justify-between">
+                  <Badge variant="outline" className="text-[10px] font-bold uppercase tracking-tighter border-primary/20 text-primary bg-primary/5">
+                    ปีการศึกษา {person.tenure}
                   </Badge>
+                  <span className="text-[10px] font-black text-muted-foreground/30 uppercase tracking-widest">
+                    {person.category}
+                  </span>
                 </div>
               </div>
             </CardContent>
