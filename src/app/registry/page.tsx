@@ -11,7 +11,65 @@ import Image from "next/image"
 import { PlaceHolderImages } from "@/lib/placeholder-images"
 
 const personnel = [
-  // Previous Executive Board members - now categorized as Student Council
+  // คณะผู้บริหารโรงเรียน (4 members)
+  { 
+    name: "Dr. Prasert Wattana", 
+    thaiName: "ดร.ประเสริฐ วัฒนา", 
+    nickname: "Sert (เสริฐ)", 
+    role: "ผู้อำนวยการโรงเรียน", 
+    category: "คณะผู้บริหารโรงเรียน",
+    tenure: "2569", 
+    avatar: "https://picsum.photos/seed/exec1/400/600"
+  },
+  { 
+    name: "Mrs. Malee Srisuwan", 
+    thaiName: "นางมาลี ศรีสุวรรณ", 
+    nickname: "Mali (มะลิ)", 
+    role: "รองผู้อำนวยการฝ่ายบริหาร", 
+    category: "คณะผู้บริหารโรงเรียน",
+    tenure: "2569", 
+    avatar: "https://picsum.photos/seed/exec2/400/600"
+  },
+  { 
+    name: "Mr. Somchai Rakthai", 
+    thaiName: "นายสมชาย รักไทย", 
+    nickname: "Chai (ชัย)", 
+    role: "รองผู้อำนวยการฝ่ายวิชาการ", 
+    category: "คณะผู้บริหารโรงเรียน",
+    tenure: "2569", 
+    avatar: "https://picsum.photos/seed/exec3/400/600"
+  },
+  { 
+    name: "Ms. Kanya Phetcha", 
+    thaiName: "นางสาวกัญญา เพชรฉ่ำ", 
+    nickname: "Kwan (ขวัญ)", 
+    role: "รองผู้อำนวยการฝ่ายกิจกรรม", 
+    category: "คณะผู้บริหารโรงเรียน",
+    tenure: "2569", 
+    avatar: "https://picsum.photos/seed/exec4/400/600"
+  },
+
+  // คุณครูที่ปรึกษา (2 members)
+  { 
+    name: "Mrs. Noi Jaisa-ard", 
+    thaiName: "นางน้อย ใจสะอาด", 
+    nickname: "Noi (น้อย)", 
+    role: "ครูที่ปรึกษาสภานักเรียนหลัก", 
+    category: "คุณครูที่ปรึกษา",
+    tenure: "2569", 
+    avatar: "https://picsum.photos/seed/adv1/400/600"
+  },
+  { 
+    name: "Mr. Viroj Lim", 
+    thaiName: "นายวิโรจน์ ลิ้ม", 
+    nickname: "Vee (วี)", 
+    role: "ครูที่ปรึกษาฝ่ายส่งเสริมประชาธิปไตย", 
+    category: "คุณครูที่ปรึกษา",
+    tenure: "2569", 
+    avatar: "https://picsum.photos/seed/adv2/400/600"
+  },
+
+  // สภานักเรียน (49 members - starting with the core leaders)
   { 
     name: "Thanaphon Suksom", 
     thaiName: "ธนภณ สุขสม", 
@@ -21,63 +79,17 @@ const personnel = [
     tenure: "2569", 
     avatar: "https://drive.google.com/uc?export=view&id=114UwCsa79_VdKHpaQSnnsfHfJ9KVcHoB"
   },
-  { 
-    name: "Kanya Phetcha", 
-    thaiName: "กัญญา เพชรฉ่ำ", 
-    nickname: "Kwan (ขวัญ)", 
-    role: "รองประธานคนที่ 1", 
-    category: "สภานักเรียน",
-    tenure: "2569", 
-    avatar: "https://picsum.photos/seed/p4/400/600" 
-  },
-  { 
-    name: "Viroj Lim", 
-    thaiName: "วิโรจน์ ลิ้ม", 
-    nickname: "Vee (วี)", 
-    role: "รองประธานคนที่ 2", 
-    category: "สภานักเรียน",
-    tenure: "2569", 
-    avatar: "https://picsum.photos/seed/p5/400/600" 
-  },
-  { 
-    name: "Sompong Bunmee", 
-    thaiName: "สมพงษ์ บุญมี", 
-    nickname: "Pong (พงษ์)", 
-    role: "เลขานุการ", 
-    category: "สภานักเรียน",
-    tenure: "2569", 
-    avatar: "https://picsum.photos/seed/p7/400/600" 
-  },
-  // Previous Advisory Teachers - now categorized as Student Council
-  { 
-    name: "Dr. Somchai Rakthai", 
-    thaiName: "ดร.สมชาย รักไทย", 
-    nickname: "Chai (ชัย)", 
-    role: "อาจารย์ที่ปรึกษาหลัก", 
-    category: "สภานักเรียน",
-    tenure: "2569", 
-    avatar: "https://picsum.photos/seed/p3/400/600" 
-  },
-  { 
-    name: "Noi Srisuwan", 
-    thaiName: "น้อย ศรีสุวรรณ", 
-    nickname: "Noi (น้อย)", 
-    role: "อาจารย์ที่ปรึกษาฝ่ายกิจกรรม", 
-    category: "สภานักเรียน",
-    tenure: "2569", 
-    avatar: "https://picsum.photos/seed/p10/400/600" 
-  },
-  // Rest of the Council (49 members)
-  ...Array.from({ length: 49 }).map((_, i) => {
+  ...Array.from({ length: 48 }).map((_, i) => {
     const roles = [
-      "หัวหน้าฝ่ายเทคโนโลยี", "หัวหน้าฝ่ายอาคารสถานที่", "เหรัญญิก", 
+      "รองประธานคนที่ 1", "รองประธานคนที่ 2", "เลขานุการ", "เหรัญญิก",
+      "หัวหน้าฝ่ายเทคโนโลยี", "หัวหน้าฝ่ายอาคารสถานที่", 
       "กรรมการฝ่ายกิจกรรม", "กรรมการฝ่ายวิชาการ", "กรรมการฝ่ายกีฬา", 
       "กรรมการฝ่ายประชาสัมพันธ์", "กรรมการฝ่ายสารวัตรนักเรียน"
     ];
-    const firstNames = ["Teeranop", "Prasert", "Malee", "Anan", "Boon", "Chai", "Duang", "Erawan", "Fah", "Gai"];
-    const lastNames = ["Chuadoem", "Kaewdee", "Jaisa-ard", "Sukdee", "Prom", "Rak", "Manee", "Wattana", "Kaew", "Sai"];
-    const nicknames = ["Solar", "Sert", "Mali", "Arm", "Ball", "Cake", "Dew", "Eve", "Fern", "Golf"];
-    const nicknamesThai = ["โซล่า", "เสริฐ", "มะลิ", "อาร์ม", "บอล", "เค้ก", "ดิว", "อีฟ", "เฟิร์น", "กอล์ฟ"];
+    const firstNames = ["Teeranop", "Anan", "Boon", "Duang", "Erawan", "Fah", "Gai", "Harn", "Itthi", "Jatuporn"];
+    const lastNames = ["Chuadoem", "Kaewdee", "Sukdee", "Prom", "Rak", "Manee", "Wattana", "Kaew", "Sai", "Petch"];
+    const nicknames = ["Solar", "Arm", "Ball", "Cake", "Dew", "Eve", "Fern", "Golf", "Heng", "Ice"];
+    const nicknamesThai = ["โซล่า", "อาร์ม", "บอล", "เค้ก", "ดิว", "อีฟ", "เฟิร์น", "กอล์ฟ", "เฮง", "ไอซ์"];
     
     return {
       name: `${firstNames[i % 10]} ${lastNames[(i + 3) % 10]}`,
@@ -86,7 +98,7 @@ const personnel = [
       role: roles[i % roles.length],
       category: "สภานักเรียน",
       tenure: "2569",
-      avatar: `https://picsum.photos/seed/extra${i + 1}/400/600`
+      avatar: `https://picsum.photos/seed/council${i + 1}/400/600`
     };
   })
 ]
@@ -111,6 +123,10 @@ export default function RegistryPage() {
     if (category === "คณะผู้บริหารโรงเรียน") return <Star className="h-3.5 w-3.5" />;
     return <Shield className="h-3.5 w-3.5" />;
   }
+
+  const executiveCount = personnel.filter(p => p.category === "คณะผู้บริหารโรงเรียน").length;
+  const teacherCount = personnel.filter(p => p.category === "คุณครูที่ปรึกษา").length;
+  const councilCount = personnel.filter(p => p.category === "สภานักเรียน").length;
 
   return (
     <div className="container mx-auto py-12 px-6 max-w-7xl">
@@ -137,9 +153,9 @@ export default function RegistryPage() {
         <Tabs defaultValue="all" className="w-full" onValueChange={setActiveTab}>
           <TabsList className="bg-white border p-1 h-auto flex-wrap">
             <TabsTrigger value="all" className="px-6 py-2">ทั้งหมด ({personnel.length})</TabsTrigger>
-            <TabsTrigger value="คณะผู้บริหารโรงเรียน" className="px-6 py-2">คณะผู้บริหารโรงเรียน (0)</TabsTrigger>
-            <TabsTrigger value="คุณครูที่ปรึกษา" className="px-6 py-2">คุณครูที่ปรึกษา (0)</TabsTrigger>
-            <TabsTrigger value="สภานักเรียน" className="px-6 py-2">สภานักเรียน ({personnel.length})</TabsTrigger>
+            <TabsTrigger value="คณะผู้บริหารโรงเรียน" className="px-6 py-2">คณะผู้บริหารโรงเรียน ({executiveCount})</TabsTrigger>
+            <TabsTrigger value="คุณครูที่ปรึกษา" className="px-6 py-2">คุณครูที่ปรึกษา ({teacherCount})</TabsTrigger>
+            <TabsTrigger value="สภานักเรียน" className="px-6 py-2">สภานักเรียน ({councilCount})</TabsTrigger>
           </TabsList>
         </Tabs>
       </div>
@@ -216,4 +232,3 @@ export default function RegistryPage() {
     </div>
   )
 }
-
