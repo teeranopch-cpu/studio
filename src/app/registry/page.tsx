@@ -11,13 +11,13 @@ import Image from "next/image"
 import { PlaceHolderImages } from "@/lib/placeholder-images"
 
 const personnel = [
-  // คณะผู้บริหาร (Executive Board - 4 members)
+  // คณะผู้บริหารโรงเรียน (Executive Board - 4 members)
   { 
     name: "Natthapron khrueawan", 
     thaiName: "ณัฐพร เครือวัลย์", 
     nickname: "Ging Gao (กิ่งเก้า)", 
-    role: "ประธานสภานักเรียน (Executive Board)", 
-    category: "Student Council",
+    role: "ประธานสภานักเรียน", 
+    category: "คณะผู้บริหารโรงเรียน",
     tenure: "2569", 
     avatar: "https://drive.google.com/uc?export=view&id=114UwCsa79_VdKHpaQSnnsfHfJ9KVcHoB"
   },
@@ -25,8 +25,8 @@ const personnel = [
     name: "Kanya Phetcha", 
     thaiName: "กัญญา เพชรฉ่ำ", 
     nickname: "Kwan (ขวัญ)", 
-    role: "รองประธานคนที่ 1 (Executive Board)", 
-    category: "Student Council",
+    role: "รองประธานคนที่ 1", 
+    category: "คณะผู้บริหารโรงเรียน",
     tenure: "2569", 
     avatar: "https://picsum.photos/seed/p4/400/600" 
   },
@@ -34,8 +34,8 @@ const personnel = [
     name: "Viroj Lim", 
     thaiName: "วิโรจน์ ลิ้ม", 
     nickname: "Vee (วี)", 
-    role: "รองประธานคนที่ 2 (Executive Board)", 
-    category: "Student Council",
+    role: "รองประธานคนที่ 2", 
+    category: "คณะผู้บริหารโรงเรียน",
     tenure: "2569", 
     avatar: "https://picsum.photos/seed/p5/400/600" 
   },
@@ -43,8 +43,8 @@ const personnel = [
     name: "Sompong Bunmee", 
     thaiName: "สมพงษ์ บุญมี", 
     nickname: "Pong (พงษ์)", 
-    role: "เลขานุการ (Executive Board)", 
-    category: "Student Council",
+    role: "เลขานุการ", 
+    category: "คณะผู้บริหารโรงเรียน",
     tenure: "2569", 
     avatar: "https://picsum.photos/seed/p7/400/600" 
   },
@@ -54,7 +54,7 @@ const personnel = [
     thaiName: "ดร.สมชาย รักไทย", 
     nickname: "Chai (ชัย)", 
     role: "อาจารย์ที่ปรึกษาหลัก", 
-    category: "Student Council",
+    category: "คุณครูที่ปรึกษา",
     tenure: "2569", 
     avatar: "https://picsum.photos/seed/p3/400/600" 
   },
@@ -63,11 +63,11 @@ const personnel = [
     thaiName: "น้อย ศรีสุวรรณ", 
     nickname: "Noi (น้อย)", 
     role: "อาจารย์ที่ปรึกษาฝ่ายกิจกรรม", 
-    category: "Student Council",
+    category: "คุณครูที่ปรึกษา",
     tenure: "2569", 
     avatar: "https://picsum.photos/seed/p10/400/600" 
   },
-  // Rest of the Council (49 members to reach 55)
+  // สภานักเรียน (Rest of the Council - 49 members)
   ...Array.from({ length: 49 }).map((_, i) => {
     const roles = [
       "หัวหน้าฝ่ายเทคโนโลยี", "หัวหน้าฝ่ายอาคารสถานที่", "เหรัญญิก", 
@@ -83,7 +83,7 @@ const personnel = [
       thaiName: `นาย/นางสาว ${firstNames[i % 10]} นามสมมติ`,
       nickname: `${nicknames[i % 10]} (${nicknames[i % 10]}ไทย)`,
       role: roles[i % roles.length],
-      category: "Student Council",
+      category: "สภานักเรียน",
       tenure: "2569",
       avatar: `https://picsum.photos/seed/extra${i + 1}/400/600`
     };
@@ -105,9 +105,9 @@ export default function RegistryPage() {
     return matchesSearch && matchesTab;
   })
 
-  const getCategoryIcon = (role: string) => {
-    if (role.includes("ที่ปรึกษา")) return <GraduationCap className="h-3.5 w-3.5" />;
-    if (role.includes("Executive")) return <Star className="h-3.5 w-3.5" />;
+  const getCategoryIcon = (category: string) => {
+    if (category === "คุณครูที่ปรึกษา") return <GraduationCap className="h-3.5 w-3.5" />;
+    if (category === "คณะผู้บริหารโรงเรียน") return <Star className="h-3.5 w-3.5" />;
     return <Shield className="h-3.5 w-3.5" />;
   }
 
@@ -120,7 +120,7 @@ export default function RegistryPage() {
               <Users className="h-10 w-10 text-accent" />
               บุคลากรของสภาโรงเรียนศีขรภูมิพิสัย
             </h1>
-            <p className="text-muted-foreground text-lg">รายชื่อสมาชิกสภานักเรียน ({personnel.length} ท่าน)</p>
+            <p className="text-muted-foreground text-lg">รายชื่อบุคลากรและสมาชิกสภานักเรียน ({personnel.length} ท่าน)</p>
           </div>
           <div className="relative w-full md:w-80">
             <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
@@ -136,7 +136,9 @@ export default function RegistryPage() {
         <Tabs defaultValue="all" className="w-full" onValueChange={setActiveTab}>
           <TabsList className="bg-white border p-1 h-auto flex-wrap">
             <TabsTrigger value="all" className="px-6 py-2">ทั้งหมด ({personnel.length})</TabsTrigger>
-            <TabsTrigger value="Student Council" className="px-6 py-2">สภานักเรียน</TabsTrigger>
+            <TabsTrigger value="คณะผู้บริหารโรงเรียน" className="px-6 py-2">คณะผู้บริหารโรงเรียน</TabsTrigger>
+            <TabsTrigger value="คุณครูที่ปรึกษา" className="px-6 py-2">คุณครูที่ปรึกษา</TabsTrigger>
+            <TabsTrigger value="สภานักเรียน" className="px-6 py-2">สภานักเรียน</TabsTrigger>
           </TabsList>
         </Tabs>
       </div>
@@ -165,7 +167,7 @@ export default function RegistryPage() {
                   />
                 </div>
 
-                <div className="space-y-1.5">
+                <div className="space-y-1">
                   <div className="flex items-center gap-2 mb-2">
                     <Badge variant="secondary" className="bg-accent/10 text-accent border-none text-[10px] font-bold px-2 py-0">
                       {person.category}
@@ -178,14 +180,13 @@ export default function RegistryPage() {
                   <p className="text-sm font-bold text-foreground/80 leading-tight">
                     {person.thaiName}
                   </p>
-                  <p className="text-xs font-medium text-muted-foreground italic flex items-center gap-1.5 pt-1">
-                    <User className="h-3 w-3 text-accent" />
+                  <p className="text-xs font-medium text-muted-foreground italic pt-1">
                     ชื่อเล่น: {person.nickname}
                   </p>
                   
-                  <div className="flex items-center gap-2 text-xs font-semibold text-foreground/70 pt-2 border-t border-border/30 mt-2">
+                  <div className="flex items-center gap-2 text-xs font-semibold text-foreground/70 pt-2 border-t border-border/30 mt-3">
                     <span className="text-accent shrink-0">
-                      {getCategoryIcon(person.role)}
+                      {getCategoryIcon(person.category)}
                     </span>
                     <span className="truncate">{person.role}</span>
                   </div>
