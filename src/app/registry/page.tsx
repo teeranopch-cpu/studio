@@ -5,7 +5,6 @@ import { useState } from "react"
 import { Input } from "@/components/ui/input"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Search, Users, Shield, GraduationCap, User } from "lucide-react"
 import Image from "next/image"
 import { PlaceHolderImages } from "@/lib/placeholder-images"
@@ -15,16 +14,16 @@ const personnel = [
     name: "Natthaporn Krueawan", 
     thaiName: "ณัฐพร เคลือวัลย์", 
     nickname: "Ging Gao (กิ่งเก้า)", 
-    role: "Council President", 
+    role: "ประธานสภานักเรียน", 
     tenure: "2569", 
     category: "Council", 
     avatar: "https://drive.google.com/uc?export=view&id=114UwCsa79_VdKHpaQSnnsfHfJ9KVcHoB"
   },
   { 
-    name: "Arisa Wongrat", 
-    thaiName: "อริสา วงศ์รัตน์", 
-    nickname: "Mint (มิ้นท์)", 
-    role: "Vice President", 
+    name: "Teeranop Chuadoem", 
+    thaiName: "นายธีรนพ เชื้อเดิม", 
+    nickname: "Solar (โซล่า)", 
+    role: "หัวหน้าฝ่ายเทคโนโลยีและโสตทัศนศึกษา", 
     tenure: "2569", 
     category: "Council", 
     avatar: "https://picsum.photos/seed/p2/200/200" 
@@ -510,17 +509,14 @@ const personnel = [
 
 export default function RegistryPage() {
   const [search, setSearch] = useState("")
-  const [activeTab, setActiveTab] = useState("all")
   
   const personnelBg = PlaceHolderImages.find(img => img.id === 'registry-card-bg');
 
   const filtered = personnel.filter(p => {
-    const matchesSearch = p.name.toLowerCase().includes(search.toLowerCase()) || 
-                          p.thaiName.toLowerCase().includes(search.toLowerCase()) ||
-                          p.role.toLowerCase().includes(search.toLowerCase()) ||
-                          p.nickname.toLowerCase().includes(search.toLowerCase())
-    const matchesTab = activeTab === "all" || p.category.toLowerCase() === activeTab.toLowerCase() || (activeTab === "past" && p.category === "Past Members")
-    return matchesSearch && matchesTab
+    return p.name.toLowerCase().includes(search.toLowerCase()) || 
+           p.thaiName.toLowerCase().includes(search.toLowerCase()) ||
+           p.role.toLowerCase().includes(search.toLowerCase()) ||
+           p.nickname.toLowerCase().includes(search.toLowerCase())
   })
 
   return (
@@ -543,16 +539,6 @@ export default function RegistryPage() {
           />
         </div>
       </div>
-
-      <Tabs defaultValue="all" className="mb-8" onValueChange={setActiveTab}>
-        <TabsList className="bg-white/50 border h-auto p-1">
-          <TabsTrigger value="all" className="px-6 py-2">บุคลากรทั้งหมด</TabsTrigger>
-          <TabsTrigger value="council" className="px-6 py-2">สภานักเรียน</TabsTrigger>
-          <TabsTrigger value="faculty" className="px-6 py-2">ครูที่ปรึกษา</TabsTrigger>
-          <TabsTrigger value="administration" className="px-6 py-2">ฝ่ายบริหาร</TabsTrigger>
-          <TabsTrigger value="past" className="px-6 py-2">ศิษย์เก่าสภาฯ</TabsTrigger>
-        </TabsList>
-      </Tabs>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {filtered.map((person, idx) => (
@@ -603,9 +589,6 @@ export default function RegistryPage() {
                   <Badge variant="outline" className="text-[10px] font-bold uppercase tracking-tighter border-primary/20 text-primary bg-primary/5">
                     ปีการศึกษา {person.tenure}
                   </Badge>
-                  <span className="text-[9px] font-black text-muted-foreground/30 uppercase tracking-widest">
-                    {person.category}
-                  </span>
                 </div>
               </div>
             </CardContent>
