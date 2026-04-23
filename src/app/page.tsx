@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Users, Scale, Facebook, Phone } from "lucide-react"
+import { ArrowRight, Users, Facebook, Phone } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
 import { PlaceHolderImages } from "@/lib/placeholder-images"
@@ -33,24 +33,8 @@ export default function Home() {
       </div>
 
       <div className="container mx-auto px-6 -mt-12 mb-16 max-w-4xl">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <Card className="shadow-xl border-none bg-white/80 backdrop-blur-sm group hover:translate-y-[-4px] transition-all">
-            <CardHeader>
-              <div className="h-12 w-12 rounded-xl bg-blue-100 flex items-center justify-center text-primary mb-4 group-hover:scale-110 transition-transform">
-                <Scale className="h-6 w-6" />
-              </div>
-              <CardTitle className="text-xl font-bold">สภานักเรียน</CardTitle>
-              <CardDescription>บทบาทหน้าที่ของสภาฯ</CardDescription>
-            </CardHeader>
-            <CardContent>
-              <p className="text-sm text-muted-foreground mb-4">ศึกษารายละเอียดบทบาทหน้าที่ และความรับผิดชอบของคณะกรรมการสภานักเรียน</p>
-              <Button variant="link" className="p-0 text-primary font-bold group-hover:translate-x-1 transition-transform" asChild>
-                <Link href="/roles">Learn More <ArrowRight className="ml-1 h-3 w-3" /></Link>
-              </Button>
-            </CardContent>
-          </Card>
-
-          <Card className="shadow-xl border-none bg-white/80 backdrop-blur-sm group hover:translate-y-[-4px] transition-all">
+        <div className="flex justify-center">
+          <Card className="shadow-xl border-none bg-white/80 backdrop-blur-sm group hover:translate-y-[-4px] transition-all max-w-md w-full">
             <CardHeader>
               <div className="h-12 w-12 rounded-xl bg-teal-100 flex items-center justify-center text-accent mb-4 group-hover:scale-110 transition-transform">
                 <Users className="h-6 w-6" />
