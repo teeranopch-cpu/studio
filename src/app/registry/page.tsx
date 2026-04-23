@@ -12,9 +12,9 @@ import { PlaceHolderImages } from "@/lib/placeholder-images"
 
 const personnel = [
   { 
-    name: "Thanaphon Suksom", 
-    thaiName: "ธนภณ สุขสม", 
-    nickname: "Note (โน้ต)", 
+    name: "Natthapron khrueawan", 
+    thaiName: "ณัฐพร เครือวัลย์", 
+    nickname: "กิ่งเก้า (Ging Gao)", 
     role: "ประธานสภานักเรียน", 
     category: "Student Council",
     tenure: "2569", 
@@ -70,7 +70,7 @@ const personnel = [
     thaiName: "ดร.สมชาย รักไทย", 
     nickname: "Chai (ชัย)", 
     role: "อาจารย์ที่ปรึกษาหลัก", 
-    category: "Advisor",
+    category: "Student Council",
     tenure: "2569", 
     avatar: "https://picsum.photos/seed/p3/400/600" 
   },
@@ -79,7 +79,7 @@ const personnel = [
     thaiName: "น้อย ศรีสุวรรณ", 
     nickname: "Noi (น้อย)", 
     role: "อาจารย์ที่ปรึกษาฝ่ายกิจกรรม", 
-    category: "Advisor",
+    category: "Student Council",
     tenure: "2569", 
     avatar: "https://picsum.photos/seed/p10/400/600" 
   },
@@ -88,7 +88,7 @@ const personnel = [
     thaiName: "พิชัย จารึก", 
     nickname: "Ek (เอก)", 
     role: "อดีตประธานสภานักเรียน", 
-    category: "Former",
+    category: "Student Council",
     tenure: "2568", 
     avatar: "https://picsum.photos/seed/p6/400/600" 
   },
@@ -101,10 +101,7 @@ const personnel = [
     tenure: "2569", 
     avatar: "https://picsum.photos/seed/p9/400/600" 
   },
-  // Adding more entries to reach 55
   ...Array.from({ length: 45 }).map((_, i) => {
-    const categories = ["Student Council", "Advisor", "Former"];
-    const cat = i < 30 ? categories[0] : (i < 38 ? categories[1] : categories[2]);
     const roles = [
       "กรรมการฝ่ายกิจกรรม", "กรรมการฝ่ายวิชาการ", "กรรมการฝ่ายกีฬา", 
       "กรรมการฝ่ายประชาสัมพันธ์", "กรรมการฝ่ายสารวัตรนักเรียน", "ประธานนักเรียนชั้นมัธยมศึกษา"
@@ -118,8 +115,8 @@ const personnel = [
       thaiName: `นาย/นางสาว ${firstNames[i % 10]}นามสมมติ`,
       nickname: `${nicknames[i % 10]} (${nicknames[i % 10]}ไทย)`,
       role: roles[i % roles.length],
-      category: cat,
-      tenure: cat === "Former" ? "2567" : "2569",
+      category: "Student Council",
+      tenure: "2569",
       avatar: `https://picsum.photos/seed/p${i + 11}/400/600`
     };
   })
@@ -166,7 +163,7 @@ export default function RegistryPage() {
               <Users className="h-10 w-10 text-accent" />
               บุคลากรของสภาโรงเรียนศีขรภูมิพิสัย
             </h1>
-            <p className="text-muted-foreground text-lg">รายชื่อสมาชิกสภานักเรียน อาจารย์ที่ปรึกษา และอดีตคณะกรรมการ ({personnel.length} ท่าน)</p>
+            <p className="text-muted-foreground text-lg">รายชื่อสมาชิกสภานักเรียน ({personnel.length} ท่าน)</p>
           </div>
           <div className="relative w-full md:w-80">
             <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
@@ -183,8 +180,6 @@ export default function RegistryPage() {
           <TabsList className="bg-white border p-1 h-auto flex-wrap">
             <TabsTrigger value="all" className="px-6 py-2">ทั้งหมด ({personnel.length})</TabsTrigger>
             <TabsTrigger value="Student Council" className="px-6 py-2">สภานักเรียน</TabsTrigger>
-            <TabsTrigger value="Advisor" className="px-6 py-2">อาจารย์ที่ปรึกษา</TabsTrigger>
-            <TabsTrigger value="Former" className="px-6 py-2">อดีตคณะกรรมการ</TabsTrigger>
           </TabsList>
         </Tabs>
       </div>
