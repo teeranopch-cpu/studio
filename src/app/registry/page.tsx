@@ -11,7 +11,7 @@ import Image from "next/image"
 import { PlaceHolderImages } from "@/lib/placeholder-images"
 
 const personnel = [
-  // Executive Board (4 members)
+  // คณะผู้บริหาร (Executive Board - 4 members)
   { 
     name: "Natthapron khrueawan", 
     thaiName: "ณัฐพร เครือวัลย์", 
@@ -48,7 +48,7 @@ const personnel = [
     tenure: "2569", 
     avatar: "https://picsum.photos/seed/p7/400/600" 
   },
-  // Advisory Teachers (2 members)
+  // คุณครูที่ปรึกษา (Advisory Teachers - 2 members)
   { 
     name: "Dr. Somchai Rakthai", 
     thaiName: "ดร.สมชาย รักไทย", 
