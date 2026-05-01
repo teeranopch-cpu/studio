@@ -15,7 +15,7 @@ const personnel = [
   { 
     name: "Chakrapong Charoenphon",
     thaiName: "จักรพงษ์ เจริญพร",
-    nickname: "ชื่อเล่น: -",
+    nickname: "",
     role: "ผู้อำนวยการโรงเรียน",
     category: "คณะผู้บริหารโรงเรียน",
     tenure: "2569",
@@ -24,7 +24,7 @@ const personnel = [
   {
     name: "Nongyao Phasuk",
     thaiName: "นงเยาว์ ผาสุก",
-    nickname: "ชื่อเล่น: -",
+    nickname: "",
     role: "รองผู้อำนวยการ",
     category: "คณะผู้บริหารโรงเรียน",
     tenure: "2569",
@@ -33,7 +33,7 @@ const personnel = [
   { 
     name: "Ratchadaporn Prakongchue", 
     thaiName: "รัชดาภรณ์ ประคองชื่อ", 
-    nickname: "ชื่อเล่น: -", 
+    nickname: "", 
     role: "รองผู้อำนวยการ", 
     category: "คณะผู้บริหารโรงเรียน",
     tenure: "2569", 
@@ -42,7 +42,7 @@ const personnel = [
   { 
     name: "Phantira Saiklin", 
     thaiName: "ภัณฑิรา สายกลิ่น", 
-    nickname: "ชื่อเล่น: -", 
+    nickname: "", 
     role: "รองผู้อำนวยการ", 
     category: "คณะผู้บริหารโรงเรียน",
     tenure: "2569", 
@@ -51,7 +51,7 @@ const personnel = [
   { 
     name: "Kittikorn Champangam", 
     thaiName: "กิจติกร จำปางาม", 
-    nickname: "ชื่อเล่น: -", 
+    nickname: "", 
     role: "รองผู้อำนวยการ", 
     category: "คณะผู้บริหารโรงเรียน",
     tenure: "2569", 
@@ -69,9 +69,9 @@ const personnel = [
     avatar: "https://drive.google.com/uc?export=view&id=1WqoRdivjVNHPMBPqs1LKcKSMnMmZqlBm"
   },
   { 
-    name: "Mr. Viroj Lim", 
-    thaiName: "นายวิโรจน์ ลิ้ม", 
-    nickname: "ชื่อเล่น: วี (Vee)", 
+    name: "Napatchaya Ditprakonkul", 
+    thaiName: "นภัสชญา ดิษฐประกรกุล", 
+    nickname: "ชื่อเล่น: kao(ครูข้าว)", 
     role: "ครูที่ปรึกษาสภานักเรียน", 
     category: "คุณครูที่ปรึกษา",
     tenure: "2569", 
